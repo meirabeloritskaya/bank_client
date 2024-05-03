@@ -45,6 +45,20 @@ def filter_alpha_data(data_client: str):
     return alpha_data
 
 
+def filter_type_data(data_client):
+    """функция распознает: являются ли  введенные данные  номером карты или счета"""
+    if len(data_client) == 16:
+        digital_card = data_client
+
+    if len(data_client) == 20:
+        digital_account = data_client
+
+    return digital_card, digital_account
+
+
+
+
+
 number_card = filter_digital_data("Visa Platinum 7000792289606361")
 number_account = filter_digital_data("Счет 73654108430135874305")
 
