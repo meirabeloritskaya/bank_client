@@ -34,6 +34,15 @@ def filter_digital_data(data_client: str) -> int:
 
     return int(digital_data)
 
+def filter_alpha_data(data_client: str):
+    "функция возвращает только название карты или счета"
+    alpha_data = ""
+
+    for el in list(data_client):
+        if el.isalpha():
+            alpha_data += el
+
+    return alpha_data
 
 
 number_card = filter_digital_data("Visa Platinum 7000792289606361")
