@@ -34,6 +34,7 @@ def filter_digital_data(data_client: str) -> int:
 
     return int(digital_data)
 
+
 def filter_alpha_data(data_client: str):
     "функция возвращает только название карты или счета"
     alpha_data = ""
@@ -55,6 +56,7 @@ def filter_type_data(data_client):
 
     return digital_card, digital_account
 
+
 def decoder_date(cod_data: str) -> str:
     """функция возвращает дату транзакции"""
     list_date = list(cod_data)[:10]
@@ -62,7 +64,6 @@ def decoder_date(cod_data: str) -> str:
     for i in (2, 5):
         revers_list_date.insert(i, ".")
     return "".join(revers_list_date)
-
 
 
 number_card = filter_digital_data("Visa Platinum 7000792289606361")
