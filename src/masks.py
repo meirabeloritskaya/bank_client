@@ -55,7 +55,13 @@ def filter_type_data(data_client):
 
     return digital_card, digital_account
 
-
+def decoder_date(cod_data: str) -> str:
+    """функция возвращает дату транзакции"""
+    list_date = list(cod_data)[:10]
+    revers_list_date = list_date[8:10] + list_date[5:7] + list_date[0:4]
+    for i in (2, 5):
+        revers_list_date.insert(i, ".")
+    return "".join(revers_list_date)
 
 
 
