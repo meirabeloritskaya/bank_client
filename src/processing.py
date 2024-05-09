@@ -28,4 +28,4 @@ def sort_id_by_date(list_id: list, reverse=True) -> list:
 
 new_list_id = select_state_id(list_state_id, "CANCELED")
 print(new_list_id)
-gitprint(sort_id_by_date(new_list_id))
+print(sort_id_by_date(new_list_id))
