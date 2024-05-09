@@ -17,7 +17,7 @@ list_state_id = [
 ]
 
 
-def sort_id_by_date(list_id: list, reverse=True) -> list:
+def sort_id_date(list_id: list, reverse=True) -> list:
     """функция сортирует список id по date"""
     return sorted(
         list_id,
@@ -28,4 +28,4 @@ def sort_id_by_date(list_id: list, reverse=True) -> list:
 
 new_list_id = select_state_id(list_state_id, "CANCELED")
 print(new_list_id)
-print(sort_id_by_date(new_list_id))
+print(sort_id_date(new_list_id))
