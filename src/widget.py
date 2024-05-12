@@ -23,6 +23,10 @@ def filter_alpha_data(data_client: str):
     return alpha_data
 
 
+
+
+
+
 def decoder_date(cod_date: str) -> str:
     """функция возвращает дату транзакции"""
     list_date = list(cod_date)[:10]
