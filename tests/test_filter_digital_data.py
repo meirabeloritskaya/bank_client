@@ -3,7 +3,7 @@ import pytest
 
 from src.widget import filter_digital_data
 
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, patch
 
 # Создаем заглушку (mock) для модуля masks
 masks = MagicMock()
