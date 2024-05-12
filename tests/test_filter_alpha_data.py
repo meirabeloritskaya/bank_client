@@ -20,3 +20,7 @@ with patch("src.widget.masks", masks):
     )
     def test_filter_alpha_data(data_client, expected):
         assert filter_alpha_data(data_client) == expected
+
+
+
+
