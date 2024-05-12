@@ -1,4 +1,4 @@
-from . import masks
+import masks
 
 
 def filter_digital_data(data_client: str) -> int:
