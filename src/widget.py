@@ -17,14 +17,10 @@ def filter_alpha_data(data_client: str):
     alpha_data = ""
 
     for el in list(data_client):
-        if el.isalpha() or el == ' ':
+        if el.isalpha() or el == " ":
             alpha_data += el
 
     return alpha_data
-
-
-
-
 
 
 def decoder_date(cod_date: str) -> str:
