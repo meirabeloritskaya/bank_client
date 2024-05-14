@@ -63,6 +63,7 @@ transactions = [
 
 
 def filter_by_currency(my_list_dict_transact, my_currency):
+    """итератор, который выдает по очереди операции, в которых указана заданная валюта"""
     usd_transactions = (
         x
         for x in my_list_dict_transact
@@ -75,3 +76,19 @@ usd_transactions = filter_by_currency(transactions, "USD")
 
 for i in range(2):
     print(next(usd_transactions)["id"])
+
+
+def transaction_descriptions(my_list_dict_transact):
+    """генератор, который принимает список словарей и возвращает описание каждой операции по очереди"""
+    for transaction in my_list_dict_transact:
+        yield transaction["description"]
+
+
+descriptions = transaction_descriptions(transactions)
+
+for i in range(5):
+    print(next(descriptions))
+
+
+
+
