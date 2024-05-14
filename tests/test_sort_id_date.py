@@ -1,6 +1,5 @@
 import pytest
 from src.processing import sort_id_date
-from datetime import datetime
 
 
 @pytest.fixture
