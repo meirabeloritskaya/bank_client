@@ -1,6 +1,5 @@
 import pytest
 
-
 from src.widget import decoder_date
 
 

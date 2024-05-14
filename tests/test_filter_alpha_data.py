@@ -1,6 +1,5 @@
 import pytest
 
-
 from src.widget import filter_alpha_data
 
 

@@ -1,6 +1,5 @@
 import pytest
 
-
 from src.masks import card_client
 
 
