@@ -40,6 +40,11 @@ git clone https://github.com/meirabeloritskaya/bank_client.git
 ```
 pip install -r requirements.txt
 ```
+## Тестирование:
+
+- проект покрыт unit тестами pytest
+- Все тесты расположены в каталоге `tests/`. Каждый файл тестов начинается с `test_`
+- достигнуто 100% покрытие всех тестов
 
 
 ## Документация:
