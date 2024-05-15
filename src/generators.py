@@ -90,5 +90,15 @@ for i in range(5):
     print(next(descriptions))
 
 
+def card_number_generator(start, end):
+    """генератор номеров банковских карт"""
+    for num in range(start, end + 1):
+        add_zeros = str(num).zfill(16)
+        card_number = " ".join(
+            [add_zeros[i : i + 4] for i in range(0, len(add_zeros), 4)]
+        )
+        yield card_number
 
 
+for card_number in card_number_generator(1, 5):
+    print(card_number)
