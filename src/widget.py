@@ -1,4 +1,4 @@
-import masks
+from src import masks
 
 
 def filter_digital_data(data_client: str) -> int:
@@ -17,7 +17,7 @@ def filter_alpha_data(data_client: str):
     alpha_data = ""
 
     for el in list(data_client):
-        if el.isalpha():
+        if el.isalpha() or el == " ":
             alpha_data += el
 
     return alpha_data
