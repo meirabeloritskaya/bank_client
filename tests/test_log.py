@@ -1,24 +1,18 @@
-from src.decorators import log, my_function
+from src.decorators import log
 
 
-import pytest
-import os
-
-
-def test_log_valid_data_with_file(capsys):
+def test_log_valid_data_with_file(tmp_path):
     """Тестирование записи в файл с переданным файлом."""
 
-    @log("my_log.txt")
-    def decorated_function():
-        return my_function(3, 4)
+    @log(tmp_path / "my_log.txt")
+    def func_with_file(x, y):
+        return x + y
 
-    result = decorated_function()
+    result = func_with_file(3, 4)
     assert result == 7
-    """Проверяем, что результат был выведен в консоль"""
-    captured = capsys.readouterr()
-    assert captured.out == "7\n"
+
     """Проверяем, что сообщение было записано в файл"""
-    with open("my_log.txt", "r") as f:
+    with open(tmp_path / "my_log.txt", "r") as f:
         assert f.read() == "my_function ok\n"
 
 
@@ -26,42 +20,45 @@ def test_log_valid_data_without_file(capsys):
     """Тестирование вывода в консоль без переданного файла."""
 
     @log()
-    def decorated_function():
-        return my_function(1, 2)
+    def func_without_file(x, y):
+        return x + y
 
-    result = decorated_function()
+    result = func_without_file(1, 2)
     assert result == 3
     """Проверяем, что результат и сообщение "my_function ok" было выведено в консоль"""
     captured = capsys.readouterr()
-    assert captured.out == "3\nmy_function ok\n"
+    assert captured.out == "my_function ok\n\n"
 
 
-def test_log_invalid_data_with_file(capsys):
+def test_log_invalid_data_with_file(tmp_path):
     """Тестирование записи в файл с переданным файлом."""
 
-    @log("my_log.txt")
-    def decorated_function():
-        return my_function("a", 4)
+    @log(tmp_path / "my_log.txt")
+    def func_with_file(x, y):
+        return x + y
 
-    with pytest.raises(Exception):
-        decorated_function()
-    assert os.path.exists("my_log.txt")
+    func_with_file(3, "a")
 
     """Проверяем, что сообщение было записано в файл"""
-    with open("my_log.txt", "r") as f:
-        assert "my_function error" in f.read()
+    with open(tmp_path / "my_log.txt", "r") as f:
+        assert (
+            f.read()
+            == "my_function error: unsupported operand type(s) for +: 'int' and 'str'. Inputs: (3, 'a'), {}\n"
+        )
 
 
 def test_log_invalid_data_without_file(capsys):
     """Тестирование вывода в консоль без переданного файла."""
 
     @log()
-    def decorated_function():
-        return my_function(1, "$")
+    def func_without_file(x, y):
+        return x + y
 
-    with pytest.raises(Exception):
-        decorated_function()
+    func_without_file("$", 1)
 
     """Проверяем, что  сообщение  было выведено в консоль"""
     captured = capsys.readouterr()
-    assert "my_function error" in captured.out
+    assert (
+        captured.out
+        == "my_function error: can only concatenate str (not \"int\") to str. Inputs: ('$', 1), {}\n\n"
+    )
