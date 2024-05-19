@@ -8,7 +8,7 @@ def log(filename=None):
             """декоратор log будет логировать вызов функции и ее результат в файл или в консоль"""
             try:
                 result = func(*args, **kwargs)
-                print(result)
+
                 my_message = "my_function ok\n"
                 if filename:
                     with open(filename, "a") as f:
@@ -28,40 +28,6 @@ def log(filename=None):
                     print(error_message)
                 return error_message
 
-            raise
-
         return wrapper
 
     return decorator
-
-
-# валидные данные, результат записан в файл
-@log(filename="my_log.txt")
-def my_function(x, y):
-    return x + y
-
-
-my_function(1, 2)
-
-# валидные данные, результат записан в консоль
-# @log()
-# def my_function(x, y):
-#     return x + y
-#
-# my_function(1, 2)
-
-
-# инвалидные данные, результат записан в файл
-@log(filename="my_log.txt")
-def my_function(x, y):
-    return x + y
-
-
-my_function("a", 2)
-
-# инвалидные данные, результат записан в консоль
-# @log()
-# def my_function(x, y):
-#     return x + y
-#
-# my_function("a", 2)
