@@ -1,0 +1,58 @@
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function error: name 'my_function' is not defined. Inputs: (3, 4), {}
+my_function error: name 'my_function' is not defined. Inputs: (1, 2), {}
+my_function error: name 'my_function' is not defined. Inputs: ('a', 4), {}
+my_function error: name 'my_function' is not defined. Inputs: (1, '$'), {}
+my_function ok
+my_function error: test_log_valid_data_with_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: (3, 4), {}
+my_function error: test_log_invalid_data_with_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: ('a', 4), {}
+my_function error: test_log_invalid_data_without_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: (1, '$'), {}
+my_function ok
+my_function error: test_log_valid_data_with_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: (3, 4), {}
+my_function error: name 'my_function' is not defined. Inputs: (), {}
+my_function ok
+my_function error: test_log_valid_data_with_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: (3, 4), {}
+my_function ok
+my_function error: can only concatenate str (not "int") to str. Inputs: ('a', 4), {}
+my_function error: can only concatenate str (not "int") to str. Inputs: (), {}
+my_function error: unsupported operand type(s) for +: 'int' and 'str'. Inputs: (1, '$'), {}
+my_function ok
+my_function error: test_log_valid_data_with_file.<locals>.decorated_function() takes 0 positional arguments but 2 were given. Inputs: (3, 4), {}
+my_function ok
+my_function error: can only concatenate str (not "int") to str. Inputs: ('a', 4), {}
+my_function ok
+my_function error: unsupported operand type(s) for +: 'int' and 'str'. Inputs: (1, '$'), {}
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function error: can only concatenate str (not "int") to str. Inputs: ('a', 4), {}
+my_function ok
+my_function error: unsupported operand type(s) for +: 'int' and 'str'. Inputs: (1, '$'), {}
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
