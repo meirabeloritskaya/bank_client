@@ -7,9 +7,9 @@ def get_data_transactions(path):
         with open(path, encoding="utf-8") as f:
             try:
                 data_transactions = json.load(f)
-            except json.JSONDecodeError as e:
+            except json.JSONDecodeError:
                 return []
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         return []
     return data_transactions
 
