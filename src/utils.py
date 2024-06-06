@@ -2,7 +2,7 @@ import json
 
 
 def get_data_transactions(path):
-    # функция возвращает список словарей с данными о  транзакциях
+    """функция возвращает список словарей с данными о  транзакциях"""
     try:
         with open(path, encoding="utf-8") as f:
             try:
@@ -12,3 +12,6 @@ def get_data_transactions(path):
     except FileNotFoundError as e:
         return [], str(e)
     return data_transactions
+
+
+# path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
