@@ -11,9 +11,7 @@ def get_data_transactions(path):
                 return []
     except FileNotFoundError:
         return []
-    return list(data_transactions)
+    return data_transactions
 
 
 # path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
-# for transaction in get_data_transactions(path):
-#     print(type(transaction))
