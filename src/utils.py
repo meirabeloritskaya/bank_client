@@ -8,9 +8,9 @@ def get_data_transactions(path):
             try:
                 data_transactions = json.load(f)
             except json.JSONDecodeError as e:
-                return [], str(e)
+                return []
     except FileNotFoundError as e:
-        return [], str(e)
+        return []
     return data_transactions
 
 
