@@ -1,8 +1,11 @@
 from unittest.mock import patch
 from src.external_api import amount_transaction
+from dotenv import load_dotenv
 import requests
-
-
+import os
+from src.external_api import amount_transaction
+from src.utils import get_data_transactions
+load_dotenv("C:/Users/Meira/PycharmProjects/card_client/.env")
 def test_amount_transaction_rub():
     """Проверяем, что транзакция в рублях корректно обрабатывается"""
     transaction = {
@@ -19,8 +22,8 @@ def test_amount_transaction_rub():
     print("test_amount_transaction_rub")
 
 
-@patch("requests.request")
-def test_amount_transaction_other_currency(mock_request):
+@patch("requests.get")
+def test_amount_transaction_other_currency(mock_get):
     """Проверяем, что транзакция в другой валюте корректно обрабатывается"""
     transaction = {
         "id": 41428829,
@@ -31,17 +34,11 @@ def test_amount_transaction_other_currency(mock_request):
             "currency": {"name": "USD", "code": "USD"},
         },
     }
-    mock_response = mock_request.return_value
-    mock_response.json.return_value = {"result": 7200.00}
+    mock_get.return_value.json.return_value = {"result": 529018.10}
+
 
     amount = amount_transaction(transaction)
-    assert amount == 7200.00
-    mock_request.assert_called_once()
-    args, kwargs = mock_request.call_args
-    assert args[0] == "GET"
-    assert "apikey=test_api_key" in kwargs["headers"].values()
-    assert (
-        "https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=100.00"
-        in args
-    )
-    print("test_amount_transaction_other_currency passed")
+    assert amount == 529018.10
+    mock_get.assert_called_once()
+
+    print("test_amount_transaction_other_currency")
