@@ -1,90 +1,1493 @@
-<!DOCTYPE html><html><head><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']={}; </script><meta name="google" content="notranslate"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><style nonce="or_-72bfE4rtOQAdtumplQ">@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xMIzIFKw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xEIzIFKw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xLIzIFKw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xHIzIFKw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzI.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style><meta name="referrer" content="origin"><title>operations.json - Google Диск</title><script nonce="lnrOD2Pv0TWku_rA--GT2A">
-          window['_DRIVE_VIEWER_IVIS'] = document.visibilityState;
-        </script><meta property="og:title" content="operations.json"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp=sharing&amp;usp=embed_facebook"><link rel="shortcut icon" href="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['cls']=new Date().getTime(); </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700" nonce="or_-72bfE4rtOQAdtumplQ"><link rel="stylesheet" href="https://www.gstatic.com/_/apps-fileview/_/ss/k=apps-fileview.v.hmaOHBjyVRk.L.W.O/am=ADCA/d=0/rs=AO0039tMrayFB89E3WQbPGmcCbRXu_pyMQ" data-id="_cl" nonce="or_-72bfE4rtOQAdtumplQ"><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['cle']=new Date().getTime(); </script><script data-id="_gd" nonce="lnrOD2Pv0TWku_rA--GT2A">window.WIZ_global_data = {"TSDtV":"%.@.]","nQyAE":{}};</script><script nonce="lnrOD2Pv0TWku_rA--GT2A">_docs_flag_initialData={"docs-ails":"docs_cold","docs-fwds":"docs_nf","docs-crs":"docs_crs_nl","docs-cp-tp":1,"docs-fe-re":2,"docs-fl":2,"docs-l1lc":4,"docs-l1lm":"TLV","docs-l2lc":4,"docs-l2lm":"BRU","docs-l2t":0,"docs-lsd":3,"docs-orl":1,"docs-shdn":0,"docs-tfh":"","docs-eett":true,"info_params":{"token":"AC4w5VjpL94Zj_E-k50I8lOXdChS-1XdbA:1717717276921"},"docs-ecdh":true,"docs-earwdm":true,"docs-ebuwdwm":true,"docs-eecdwm":true,"docs-eeegrsdm":false,"docs-eecpdm":true,"docs-easdwm":true,"docs-eadwm":false,"docs-eapdwm":true,"docs-ecaswm":false,"docs-ecdw":false,"docs-ecddwm":false,"docs-ecsdw":true,"docs-edswm":false,"docs-edatadm":true,"docs-edwewm":false,"docs-eedswm":false,"docs-efewdm":false,"docs-efwm":false,"docs-egfdwm":true,"docs-egdwm":false,"docs-eicdwm":true,"docs-elnswm":false,"docs-eeoswm":false,"docs-emadwm":false,"docs-enpdwm":true,"docs-ensdwm":false,"docs-wiz-endm":true,"docs-eodpswm":false,"docs-eodwm":true,"docs-wiz-epdwm":true,"docs-epsc":false,"docs-epdwm":false,"docs-edsedw":true,"docs-emsedwm":false,"docs-esdodwm":true,"docs-esidm":true,"docs-esdwm":false,"docs-espdwm":false,"docs-esfdm":true,"docs-etsswm":false,"docs-euddwm":true,"docs-eoiidwm":true,"docs-eooidwm":true,"docs-erfdwm":true,"docs-eubcdwm":true,"docs-mm":10,"docs-cpr":false,"docos-edutfr":false,"uls":"{\"langs\":[\"ru\"],\"itcs\":[],\"override\":\"\",\"selected\":\"\",\"activated\":false}","customer_type":"ND","docs-obsImUrl":"https://ssl.gstatic.com/docs/common/netcheck.gif","docs-ecuach":false,"docs-ecci":false,"docs-esi":false,"docs-cei":{"i":[71612695,94950048,71671666,94479314,49472091,71386833,71652641,71197914,5706786,49622751,48966262,71902351,94514649,71478577,94518821,94618570,49833490,94681262,5792878,94429640,50335937,71489188,71079826,71387957,71658008,50297374,5737800,71085219,71545621,50221868,71185138,94621662,94356310,5712647,71582496,71897995,71468612,49822889,49823132,94692096,5705891,94517171,50562726,71625688,94353316,94406144,71868429,49943087,71544762,71831090,94537004,71407161,71008161,94541236,71569287,49769385,71632214,71401516,49643963,71528565,70971134,50498815,71402445,94339315,5712270,94554542,71554320,71239074,49372463,71038182,94605079,71288994,50515255,94586087,94428434,94367326,5704621,71560087,50359988,71829378,94743237,71330661,71530191,94776430,5713195,71035328,50266070,71690008,5703839,49924734,71536984,71387260,71478148,71473249,50273576,94444997,71722094,71659921,71254142,50596302,71530953,71357781,71123692,49979626,94397769,71574038,50529271,94415433,49623141,50587050,71791547,71722580,5704745,5714051,71346840,94434465,50360884,71531245,94381874,49375342,50520367,94399372,71679568,5712639,71960368,94739081,71614563,5707899,94507615,94364629,5711538,71429635,71924339,94587105,94482291,49842923,50513182,71961254],"cf":{}},"docs-api-keys":{},"docs-cajct":"CANARY_TYPE_NONE","buildLabel":"apps-fileview.texmex_20240530.01_p1","docs-show_debug_info":false,"docs-edmlf":false,"ondlburl":"https://docs.google.com","drive_url":"https://drive.google.com/u/0","app_url":"https://drive.google.com/file/u/0/?authuser\u003d0","docs-itrf":false,"docs-gsmd":"https://workspace.google.com","docs-icdmt":[],"docs-mip":25000000,"docs-mif":1000,"docs-msid":32767,"docs-emid":false,"docs-mib":52428800,"docs-mid":2048,"docs-rid":1024,"docs-ecig":false,"docs-eifam":true,"docs-sup":"/file/u/0","docs-seu":"https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/edit","docs-crp":"/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view","docs-crq":"usp\u003dsharing","docs-ucd":"","docs-uptc":["lsrp","noreplica","ouid","ca","sh","dl","hi","hi_ext","usp","urp","utm_source","utm_medium","utm_campaign","utm_term","utm_content","aaac","sle"],"docs-doddn":"CompanyName","docs-uddn":"","docs-ugn":"Meira","docs-eygl":true,"docs-epq":false,"docs-erdiiv":false,"docs-eqspdc":false,"docs-acap":["docs.security.access_capabilities",1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],"docs-ci":"1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy","docs-eccfs":false,"docs-eefufd":false,"docs-eco":false,"docs-ndt":"Untitled Texmex","docs-prn":"","docs-een":false,"docos-enmafo":true,"docs-as":"","docs-etdimo":false,"docs-mdck":"","docs-eccbs":false,"docs-mmpt":9000,"docs-erd":false,"docs-uootuns":false,"docs-amawso":false,"docs-ofmpp":false,"docs-anlpfdo":false,"docs-eslars":true,"docs-ems":"SHARE_SUBMENU","docs-phe":"https://contacts.google.com","docs-glu":"","docs-wsu":"","docs-wsup":"","docs-sccfo":"PROD","docs-pid":"107007186051477993001","docs-ricocpb":false,"docs-rdowr":false,"docs-effnp":false,"docs-cttmtbr":0,"docs-edlo":false,"docs-cttmteq":0,"docos-edces":false,"docs-dec":false,"docs-ectt":false,"docs-ebbouf":false,"docs-ecgd":false,"docs-dsps":true,"docs-ececs":false,"docs-elcfd":false,"docs-enjec":false,"server_time_ms":1717717276948,"gaia_session_id":"0","docs-isb":true,"docs-agdc":false,"docs-anddc":false,"docs-adndldc":false,"docs-dhnap":"drive.google.com","docs-ds":"https","docs-emmda":false,"docs-clibs":1,"docs-cirts":20000,"docs-cide":true,"docs-cn":"","docs-dprfo":false,"docs-dom":false,"docs-eacr":false,"docs-eacw":false,"docs-ecer":false,"docs-ecir":true,"docs-ecssl":false,"docs-ecssi":false,"docs-ecped":true,"docs-ecprgba":true,"docs-ecccer":false,"docs-copy-ecci":false,"docs-edpq":false,"docs-edamc":false,"docs-edomic":false,"docs-eddm":false,"docos-edii":false,"docs-edmsc":false,"docs-edsi":false,"docs-esrli":true,"docs-fwd":false,"docs-egsd":true,"docs-ehtabi":false,"docs-eisd":false,"docs-eibu":true,"docs-eibs":true,"docs-eiecr":true,"docs-eisuwt":true,"docs-eir":true,"docs-ejefbwp":true,"docs-eksdm":false,"docs-elds":false,"docs-emp":false,"docs-emcf":true,"docs-emv2":true,"docs-emmu":false,"docs-enpks":false,"docs-eoisuwt":false,"docs-eooii":true,"docs-eomp":false,"docs-epmi":false,"docs-eph":false,"docs-epat":true,"docs-ermcf":false,"docs-erpep":false,"docs-ertms":false,"docs-rolibilc":false,"docs-ersd":false,"docs-esbws":false,"docs-eswwu":false,"docs-esml":true,"docs-ete":false,"docs-etpi":false,"docs-euqbp":true,"docs-eusca":false,"docs-ewlip":true,"docs-eztci":false,"docs-ezduole":false,"docs-hcwidu":false,"docs-hmg":false,"docs-ipmmp":true,"docs-ipuv":true,"docs-plimif":20.0,"docs-scmdoi":true,"docs-sptm":true,"docs-ssi":false,"docs-eslin":true,"docs-uoci":"","docs-gth":"","docs-ndsom":[],"docs-dm":"application/json","docs-sdsom":[],"docs-po":"https://drive.google.com","docs-to":"https://drive.google.com","docs-egit":false,"opmbs":52428800,"opmpd":5000,"opbu":"https://docs.google.com/picker","docs-pe":1,"opru":"https://drive.google.com/relay.html","opdu":true,"ophi":"texmex","opst":"","opuci":"","opsmu":"https://docs.google.com/picker","docs-ehipo":false,"projector_base_url":"//drive.google.com","docs-drk":[],"docs-erkpp":false,"docs-erkfsu":true,"docs-tdd":true,"jobset":"prod","docs-eqam":false,"docs-euaool":false,"docs-eua":false,"docs-uahnt":"","docs-esap":true,"docs-efib":false,"docs-se":false,"docs-eaaw":false,"docs-eecs":false,"docs-emtr":false,"docs-euepni":false,"docs-uwzh":false,"docs-egf":false,"docs-uptuf":true,"docs-eodpb":true,"docs-odpl":true,"docs-epv":false,"docs-odpdu":[null,null,null,"//drive.google.com/odp/dialog"],"docs-odpu":[null,null,null,"//drive.google.com/odp/embed"],"docs-dafjera":false,"docs-daflia":false,"docs-dafgfma":false,"docs-fta-fnrhci":false,"docs-spdy":true,"xdbcfAllowHostNamePrefix":true,"xdbcfAllowXpc":true,"docs-dbctc":false,"docs-ebctcio":true,"docs-ecid":false,"docs-iror":true,"docs-eirj":false,"promo_url":"","promo_second_url":"","promo_title":"","promo_title_prefix":"","promo_content_html":"","promo_more_element_text":"","promo_second_more_element_text":"","promo_element_id":"","promo_orientation":1,"promo_arrow_alignment":0,"promo_show_on_click":false,"promo_hide_arrow":false,"promo_show_on_load":false,"promo_mark_dismissed_on_show":false,"promo_use_material_styling":false,"promo_close_button_text":"","promo_icon_url":"","promo_action_id":"","promo_impression_id":0,"promo_is_contextual":false,"promo_css_class_name":"","docs-epfv":false,"enable_promo_manager_control_for_promo_visibility":false,"docs-epcc":true,"docs-ccwt":80,"docs-ut":1,"docs-era":true,"docs-eldi":false,"docs-dli":false,"docs-liap":"/logImpressions","ilcm":{"eui":"ADFN-cuwl61gw2zcDUTvO3JFE-OnZp5zyGS4zyzF1vpk7cP2MqxYjELhGIPAZz5Thgkfya1Yt0OP","je":1,"sstu":1717717276921770,"si":"CK2f9sCTyIYDFRbHcAIdrk4XxQ","gsc":null,"ei":[5703839,5704621,5704745,5705891,5706786,5707899,5711538,5712270,5712639,5712647,5713195,5714051,5737800,5792878,48966262,49372463,49375342,49472091,49622751,49623141,49643963,49769385,49822889,49823132,49833490,49842923,49924734,49943087,49979626,50221868,50266070,50273576,50297374,50335937,50359988,50360884,50498815,50513182,50515255,50520367,50529271,50562726,50587050,50596302,70971134,71008161,71035328,71038182,71079826,71085219,71123692,71185138,71197914,71239074,71254142,71288994,71330661,71346840,71357781,71386833,71387260,71387957,71401516,71402445,71407161,71429635,71468612,71473249,71478148,71478577,71489188,71528565,71530191,71530953,71531245,71536984,71544762,71545621,71554320,71560087,71569287,71574038,71582496,71612695,71614563,71625688,71632214,71652641,71658008,71659921,71671666,71679568,71690008,71722094,71722580,71791547,71829378,71831090,71868429,71897995,71902351,71924339,71960368,71961254,94339315,94353316,94356310,94364629,94367326,94381874,94397769,94399372,94406144,94415433,94428434,94429640,94434465,94444997,94479314,94482291,94507615,94514649,94517171,94518821,94537004,94541236,94554542,94586087,94587105,94605079,94618570,94621662,94681262,94692096,94739081,94743237,94776430,94950048],"crc":0,"cvi":[]},"docs-ccdil":false,"docs-eil":true,"docs-edp":true,"docs-nrfd":false,"docs-nrfdfr":false,"docs-dcho":["https://meet.google.com"],"docs-gsoil":"docs_gsabs"}; _docs_flag_cek= null ; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['difl']=new Date().getTime();</script><script nonce="lnrOD2Pv0TWku_rA--GT2A">window.viewerData = {config: {'id': '1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy', 'title': 'operations.json', 'isItemTrashed':  false , 'documentResourceKey': '','enableEmbedDialog': true,'projectorFeedbackId': '99950', 'projectorFeedbackBucket': 'viewer-web',}, configJson: ["0",null,null,null,null,1,null,null,null,1,1,[1,null,null,"AIzaSyDVQw45DwoYh632gvsP5vPDqEKvb-Ywnb8",0,null,null,null,null,"AIzaSyC1eQ1xj69IdTMeii5r7brs3R90eck-m7k",null,"/drive/v2internal",1,1,1,null,null,1,"/drive/v2internal",0,1,1],null,5,1,"https://drive.google.com",null,1,"https://drive.google.com",null,null,1,null,1,null,null,null,null,null,1,null,null,[[null,"0",1],6,1,1,null,null,null,1,["ADFN-cuwl61gw2zcDUTvO3JFE-OnZp5zyGS4zyzF1vpk7cP2MqxYjELhGIPAZz5Thgkfya1Yt0OP",1,"CK2f9sCTyIYDFRbHcAIdrk4XxQ",1717717276921770,[5703839,5704621,5704745,5705891,5706786,5707899,5711538,5712270,5712639,5712647,5713195,5714051,5737800,5792878,48966262,49372463,49375342,49472091,49622751,49623141,49643963,49769385,49822889,49823132,49833490,49842923,49924734,49943087,49979626,50221868,50266070,50273576,50297374,50335937,50359988,50360884,50498815,50513182,50515255,50520367,50529271,50562726,50587050,50596302,70971134,71008161,71035328,71038182,71079826,71085219,71123692,71185138,71197914,71239074,71254142,71288994,71330661,71346840,71357781,71386833,71387260,71387957,71401516,71402445,71407161,71429635,71468612,71473249,71478148,71478577,71489188,71528565,71530191,71530953,71531245,71536984,71544762,71545621,71554320,71560087,71569287,71574038,71582496,71612695,71614563,71625688,71632214,71652641,71658008,71659921,71671666,71679568,71690008,71722094,71722580,71791547,71829378,71831090,71868429,71897995,71902351,71924339,71960368,71961254,94339315,94353316,94356310,94364629,94367326,94381874,94397769,94399372,94406144,94415433,94428434,94429640,94434465,94444997,94479314,94482291,94507615,94514649,94517171,94518821,94537004,94541236,94554542,94586087,94587105,94605079,94618570,94621662,94681262,94692096,94739081,94743237,94776430,94950048]]],null,1,null,null,[null,"Meira Beloritskaya","meiramirth@gmail.com","//lh3.googleusercontent.com/a/ACg8ocIIdTDmjKUDAn9PTpSiSJqdEqr1xUBmtU63djGs0S9PUTrXVA\u003ds50-c-k-no",null,null,null,null,1,0],null,null,1,null,null,"https://docs.google.com",null,1,[null,0],["https://youtube.googleapis.com",null,null,null,null,"AIzaSyDVQw45DwoYh632gvsP5vPDqEKvb-Ywnb8","https://workspacevideo-pa.googleapis.com",null,null,null,null,0],1,null,null,null,1,null,1,1,[null,null,null,null,null,null,null,3000,"meiramirth@gmail.com",null,null,null,null,null,null,null,null,"17383412844125348768"],null,null,null,[1,1,1,1],[null,null,1,0,1,0],1,null,null,null,null,null,null,1,["AIzaSyCMp6sr4oTC18AWkE2Ii4UBZHTHEpGZWZM","https://blobcomments-pa.clients6.google.com",null,1,1,1,null,null,null,null,"17383412844125348768"],null,1,null,null,1,null,null,1,null,null,null,[1,1,1],null,null,0,1,[null,null,"https://clients6.google.com","AIzaSyD_InbmSFufIEps5UAt2NmB_3LvBH3Sz_8","https://people-pa.googleapis.com",null,null,null,1,1,1],null,1,null,null,null,null,[0,0],null,null,null,null,0,null,0,1,null,null,null,null,null,null,[0,"","","",""],1,[null,null,0,0,0,0,1],null,1,[[null,null,null,"//drive.google.com/odp/embed"],null,"/drive/v2internal","AIzaSyCIGHYEdm91p31HKyJSoU4at7IqhCViXuA",1,null,[null,null,null,"//drive.google.com/odp/dialog"]],[1],null,null,null,null,1,"https://workspace.google.com",null,null,0,1,1,1,1,null,1,["AIzaSyCMp6sr4oTC18AWkE2Ii4UBZHTHEpGZWZM","https://drivemetadata.clients6.google.com",null,"https://drivelabels.clients6.google.com"],1,1,null,null,null,null,1,1,null,null,1,1,1,1,[null,null,null,1,1,null,null,null,70,null,null,"texmex-projector"],[1],1,1,0,[["en","ar","de","en-GB","es","es-419","fr","it","ja","ko","nl","pl","pt","ru","th","tr","zh-CN","zh-TW"],"en",null,0,null,0],1,1,null,[null,1],0,[0,"AIzaSyDVQw45DwoYh632gvsP5vPDqEKvb-Ywnb8","appsgenaiserver-pa.googleapis.com",0,0,"AIzaSyDVQw45DwoYh632gvsP5vPDqEKvb-Ywnb8","Meira",0,0],1,null,"AC4w5VjpL94Zj_E-k50I8lOXdChS-1XdbA:1717717276921",0], itemJson: [null,"operations.json",null,null,null,null,null,null,null,"https://drive.google.com/viewerng/upload?ds\u003dAPznzaa49fjQAWvulbBkJ_Jh5Bck5lk9iEitvHess7vQl3lZzIPpZz22Hqy_inDs3_rlqjc93eX3_cnSxRRXwZP-TZ9gfvBX2okAYBBhGBCcjxWbgf9DXzPf-7fjhNpADI6P4Ub-KKz9sq405kcSzbMi57Kz62n12-j43G82125CSGAH_GjAQ7XejD5IrpCPf1za4dgV-NK_IMB2cRdTTjyajx3O5701D3dsem9HGjcDlQQemt41JPmL2cWGIprhwCqujdcAdDTRff9B29ceT9hBGxw7XUBPoDizP4z92KS2tyi4cjDRnvoc5uIj6p_4dOreXoFldDWDhrPLEB7mnssmmo0NX0Hh7C1hx9ABxhi29dLRKyJ49tQXU5Wcx4ZYEiha3xDUAS8x\u0026ck\u003ddrive\u0026p\u003dproj",null,"application/json",null,null,6,null,"https://drive.google.com/file/u/0/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view",null,"https://drive.usercontent.google.com/u/0/uc?id\u003d1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy\u0026export\u003ddownload",null,5,0,null,null,null,[null,null,"37468"],null,null,null,null,null,0,"json",null,[["0BwZVrnmTgIDPZVR2SVZQcllwVVZXTUt0WExxVEpiZDkzQW1nPQ"],null,["1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy"]],null,null,null,null,null,null,0,null,0,null,"",null,null,0]};</script><script nonce="lnrOD2Pv0TWku_rA--GT2A">;this.gbar_={CONFIG:[[[0,"www.gstatic.com","og.qtm.en_US.GJkyMsvcljY.2019.O","co.il","ru","25",0,[4,2,"","","","639614954","0"],null,"HEliZpT3OszOp84P9qb0kQU",null,0,"og.qtm.qmT6DQgbzEQ.L.W.O","AA2YrTtmD1oWXfR6WhUiAKksxBHsMK4_SQ","AA2YrTuUoxtuyUDvYGtQ10hK7I_33XgLMg","",2,1,200,"ISR",null,null,"25","25",1,null,null,72175901,0],null,[1,0.1000000014901161,2,1],null,[1,0,0,null,"0","meiramirth@gmail.com","","AJ5SeQImwcZy8zIAv8Wg_1sJabMw4N700XLHf_zSS1hYmXnKKqQNtSxWqvqPohPYWVfii3OYyrlRUyWWaAJ750IpSQvXZKmdUA",0,0,0],[0,0,"",1,0,0,0,0,0,0,null,0,0,null,0,0,null,null,0,0,0,"","","","","","",null,0,0,0,0,0,null,null,null,"rgba(32,33,36,1)","transparent",0,0,0,null,null,1,0,0],["%1$s (по умолчанию)","Аккаунт бренда",1,"%1$s (делегированный)",1,null,83,"/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp=sharing\u0026authuser=$authuser",null,null,null,1,"https://accounts.google.com/ListAccounts?authuser=0\u0026pid=25\u0026gpsia=1\u0026source=ogb\u0026atic=1\u0026mo=1\u0026mn=1\u0026hl=ru\u0026ts=216",0,"dashboard",null,null,null,null,"Профиль","",1,null,"Вы не вошли в аккаунт","https://accounts.google.com/AccountChooser?source=ogb\u0026continue=$continue\u0026Email=$email\u0026ec=GAhAGQ","https://accounts.google.com/RemoveLocalAccount?source=ogb","Удалить","Войти",0,1,1,0,1,1,0,null,null,null,"Сеанс завершен",null,null,null,"Гость",null,"По умолчанию","Делегированный","Выйти из всех аккаунтов",1,null,null,0,null,null,"myaccount.google.com","https",0,1,0],null,["1","gci_91f30755d6a6b787dcc2a4062e6e9824.js","googleapis.client:gapi.iframes","0","ru"],null,null,null,null,["m;/_/scs/abc-static/_/js/k=gapi.gapi.en.JHoMBbBABZg.O/am=AAAQ/d=1/rs=AHpOoo_6Zf8M75AJqSyaaLg_vD7Vr9kevQ/m=__features__","https://apis.google.com","","","1","",null,1,"es_plusone_gc_20240506.0_p0","ru",null,0],[0.009999999776482582,"co.il","25",[null,"","0",null,1,5184000,null,null,"",null,null,null,null,null,0,null,0,null,1,0,0,0,null,null,0,0,null,0,0,0,0,0],null,null,null,0,null,null,["5061451","google\\.(com|ru|ca|by|kz|com\\.mx|com\\.tr)$",1]],[1,1,null,40400,25,"ISR","ru","639614954.0",8,1,1,0,null,null,null,null,"3700942,3701241,3701244,3701310,3701387",null,null,null,"HEliZpT3OszOp84P9qb0kQU",0,0,0,null,2,5,"nn",62,0,0,1,1,1,72175901,0],[[null,null,null,"https://www.gstatic.com/og/_/js/k=og.qtm.en_US.GJkyMsvcljY.2019.O/rt=j/m=qabr,qgl,q_dnp,qcwid,qbd,qapid,qads,qrcd,q_dg,qrbg/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTtmD1oWXfR6WhUiAKksxBHsMK4_SQ"],[null,null,null,"https://www.gstatic.com/og/_/ss/k=og.qtm.qmT6DQgbzEQ.L.W.O/m=qcwid/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTuUoxtuyUDvYGtQ10hK7I_33XgLMg"]],null,null,null,[[[null,null,[null,null,null,"https://ogs.google.com/u/0/widget/account?amb=1\u0026sea=1"],0,414,436,57,4,1,0,0,65,66,8000,"https://accounts.google.com/SignOutOptions?hl=ru\u0026continue=https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view%3Fusp%3Dsharing\u0026service=writely\u0026ec=GBRAGQ",68,2,null,null,1,113,"Что-то пошло не так.%1$sПопробуйте обновить страницу или %2$sвыбрать другой аккаунт%3$s.",3,null,null,75,0,null,null,null,null,null,null,null,"/widget/account",["https","myaccount.google.com",0,32,83,0],0,0,1,["Важное оповещение системы безопасности","Важное оповещение об аккаунте","Оповещение об использовании хранилища"],0,1,null,1,1,0,0,null,null,0,0,0,0,0,0],[null,null,[null,null,null,"https://ogs.google.com/u/0/widget/callout/sid?dc=1\u0026gm3=1"],null,280,420,47,55,0,null,0,null,null,8000,null,71,4,null,null,null,null,null,null,null,null,76,null,null,null,107,108,109,""]],null,null,"25","25",1,0,null,"ru",1,["/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp=sharing\u0026authuser=$authuser","https://accounts.google.com/AddSession?service=wise\u0026continue=https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp%3Dsharing\u0026ec=GAlAGQ","https://accounts.google.com/Logout?continue=https://docs.google.com\u0026ec=GAdAGQ","https://accounts.google.com/ListAccounts?authuser=0\u0026pid=25\u0026gpsia=1\u0026source=ogb\u0026atic=1\u0026mo=1\u0026mn=1\u0026hl=ru\u0026ts=216",0,0,"",0,0,null,0,0,"https://accounts.google.com/ServiceLogin?service=wise\u0026passive=1209600\u0026osid=1\u0026continue=https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp%3Dsharing\u0026followup=https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp%3Dsharing\u0026ec=GAZAGQ",0,0],0,0,0,[null,"https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp=sharing",null,null,null,1,null,0,0,"","","91","https://ogads-pa.clients6.google.com",0,0,0,"","",0],0,null,0,1],null,[["mousedown","touchstart","touchmove","wheel","keydown"],300000],[[null,null,null,"https://accounts.google.com/RotateCookiesPage"],3,null,null,null,0,0],[300000,"/u/0","/u/0/_/gog/get","AJ5SeQImwcZy8zIAv8Wg_1sJabMw4N700XLHf_zSS1hYmXnKKqQNtSxWqvqPohPYWVfii3OYyrlRUyWWaAJ750IpSQvXZKmdUA","https",0,"aa.google.com","rt=j\u0026sourceid=25","","lnrOD2Pv0TWku_rA--GT2A",null,0,1,null,1,null,1,1,"https://waa-pa.clients6.google.com","AIzaSyBGb5fGAyC-pRcRU6MUHb__b_vKha71HRE","BGzusj5ImLnUrCMhNtL0",null,1,0,"https://waa-pa.googleapis.com"]]],};this.gbar_=this.gbar_||{};(function(_){var window=this;
-try{
-_._F_toggles_initialize=function(a){("undefined"!==typeof globalThis?globalThis:"undefined"!==typeof self?self:this)._F_toggles=a||[]};(0,_._F_toggles_initialize)([]);
-/*
-
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
-var ha,ia,ma,oa,pa,ya,za,Aa,Ca,Da,Ea,Ha,Xa,Wa,$a,bb,ab,cb,db,gb,mb,ob,pb,qb,rb;_.aa=function(a,b){if(Error.captureStackTrace)Error.captureStackTrace(this,_.aa);else{const c=Error().stack;c&&(this.stack=c)}a&&(this.message=String(a));void 0!==b&&(this.cause=b)};_.ca=function(a){_.r.setTimeout(()=>{throw a;},0)};_.da=function(){var a=_.r.navigator;return a&&(a=a.userAgent)?a:""};ha=function(a){return ea?fa?fa.brands.some(({brand:b})=>b&&-1!=b.indexOf(a)):!1:!1};_.u=function(a){return-1!=_.da().indexOf(a)};
-ia=function(){return ea?!!fa&&0<fa.brands.length:!1};_.ja=function(){return ia()?!1:_.u("Opera")};_.ka=function(){return ia()?!1:_.u("Trident")||_.u("MSIE")};_.la=function(){return _.u("Firefox")||_.u("FxiOS")};_.na=function(){return _.u("Safari")&&!(ma()||(ia()?0:_.u("Coast"))||_.ja()||(ia()?0:_.u("Edge"))||(ia()?ha("Microsoft Edge"):_.u("Edg/"))||(ia()?ha("Opera"):_.u("OPR"))||_.la()||_.u("Silk")||_.u("Android"))};
-ma=function(){return ia()?ha("Chromium"):(_.u("Chrome")||_.u("CriOS"))&&!(ia()?0:_.u("Edge"))||_.u("Silk")};oa=function(){return ea?!!fa&&!!fa.platform:!1};pa=function(){return _.u("iPhone")&&!_.u("iPod")&&!_.u("iPad")};_.qa=function(){return pa()||_.u("iPad")||_.u("iPod")};_.ra=function(){return oa()?"macOS"===fa.platform:_.u("Macintosh")};_.ta=function(a,b){return 0<=_.sa(a,b)};
-_.ua=function(a){let b="",c=0;const d=a.length-10240;for(;c<d;)b+=String.fromCharCode.apply(null,a.subarray(c,c+=10240));b+=String.fromCharCode.apply(null,c?a.subarray(c):a);return btoa(b)};_.va=function(a){return null!=a&&a instanceof Uint8Array};_.wa=function(a){return Array.prototype.slice.call(a)};ya=function(a,b){_.xa(b,(a|0)&-14591)};za=function(a,b){_.xa(b,(a|34)&-14557)};Aa=function(a){a=a>>14&1023;return 0===a?536870912:a};Ca=function(a){return!(!a||"object"!==typeof a||a.i!==Ba)};
-Da=function(a){return null!==a&&"object"===typeof a&&!Array.isArray(a)&&a.constructor===Object};Ea=function(a,b,c){if(!Array.isArray(a)||a.length)return!1;const d=a[_.v]|0;if(d&1)return!0;if(!(b&&(Array.isArray(b)?b.includes(c):b.has(c))))return!1;_.xa(a,d|1);return!0};_.Fa=function(a){if(a&2)throw Error();};Ha=function(a,b){(b=_.Ga?b[_.Ga]:void 0)&&(a[_.Ga]=_.wa(b))};_.Ja=function(){const a=Error();Ia(a,"incident");_.ca(a)};_.Ka=function(a){a=Error(a);Ia(a,"warning");return a};
-_.Ma=function(a){if("boolean"!==typeof a)throw Error("r`"+_.La(a)+"`"+a);return a};_.Na=function(a){if(!Number.isFinite(a))throw _.Ka("enum");return a|0};_.Oa=function(a){if("number"!==typeof a)throw _.Ka("int32");if(!Number.isFinite(a))throw _.Ka("int32");return a|0};_.Pa=function(a){if(null!=a&&"string"!==typeof a)throw Error();return a};_.Qa=function(a){return null==a||"string"===typeof a?a:void 0};
-_.Sa=function(a,b,c){if(null!=a&&"object"===typeof a&&a.Hd===_.Ra)return a;if(Array.isArray(a)){var d=a[_.v]|0,e=d;0===e&&(e|=c&32);e|=c&2;e!==d&&_.xa(a,e);return new b(a)}};_.Ua=function(a,b){Ta=b;a=new a(b);Ta=void 0;return a};
-_.Va=function(a,b,c){null==a&&(a=Ta);Ta=void 0;if(null==a){var d=96;c?(a=[c],d|=512):a=[];b&&(d=d&-16760833|(b&1023)<<14)}else{if(!Array.isArray(a))throw Error("s");d=a[_.v]|0;if(d&2048)throw Error("t");if(d&64)return a;d|=64;if(c&&(d|=512,c!==a[0]))throw Error("u");a:{c=a;const e=c.length;if(e){const f=e-1;if(Da(c[f])){d|=256;b=f-(+!!(d&512)-1);if(1024<=b)throw Error("v");d=d&-16760833|(b&1023)<<14;break a}}if(b){b=Math.max(b,e-(+!!(d&512)-1));if(1024<b)throw Error("w");d=d&-16760833|(b&1023)<<14}}}_.xa(a,
-d);return a};Xa=function(a,b){return Wa(b)};Wa=function(a){switch(typeof a){case "number":return isFinite(a)?a:String(a);case "boolean":return a?1:0;case "object":if(a)if(Array.isArray(a)){if(Ea(a,void 0,0))return}else{if(_.va(a))return _.ua(a);if("function"==typeof _.Ya&&a instanceof _.Ya)return a.j()}}return a};$a=function(a,b,c){const d=_.wa(a);var e=d.length;const f=b&256?d[e-1]:void 0;e+=f?-1:0;for(b=b&512?1:0;b<e;b++)d[b]=c(d[b]);if(f){b=d[b]={};for(const g in f)b[g]=c(f[g])}Ha(d,a);return d};
-bb=function(a,b,c,d,e){if(null!=a){if(Array.isArray(a))a=Ea(a,void 0,0)?void 0:e&&(a[_.v]|0)&2?a:ab(a,b,c,void 0!==d,e);else if(Da(a)){const f={};for(let g in a)f[g]=bb(a[g],b,c,d,e);a=f}else a=b(a,d);return a}};ab=function(a,b,c,d,e){const f=d||c?a[_.v]|0:0;d=d?!!(f&32):void 0;const g=_.wa(a);for(let h=0;h<g.length;h++)g[h]=bb(g[h],b,c,d,e);c&&(Ha(g,a),c(f,g));return g};cb=function(a){return a.Hd===_.Ra?a.toJSON():Wa(a)};
-db=function(a,b,c=za){if(null!=a){if(a instanceof Uint8Array)return b?a:new Uint8Array(a);if(Array.isArray(a)){var d=a[_.v]|0;d&2||(b&&(b=0===d||!!(d&32)&&!(d&64||!(d&16))),a=b?_.xa(a,(d|34)&-12293):ab(a,db,d&4?za:c,!0,!0));return a}a.Hd===_.Ra&&(c=a.ka,d=c[_.v],a=d&2?a:_.Ua(a.constructor,_.eb(c,d,!0)));return a}};_.eb=function(a,b,c){const d=c||b&2?za:ya,e=!!(b&32);a=$a(a,b,f=>db(f,e,d));a[_.v]=a[_.v]|32|(c?2:0);return a};
-_.fb=function(a){const b=a.ka,c=b[_.v];return c&2?_.Ua(a.constructor,_.eb(b,c,!1)):a};gb=function(a,b,c,d){b=d+(+!!(b&512)-1);if(!(0>b||b>=a.length||b>=c))return a[b]};_.hb=function(a,b,c,d,e){const f=Aa(b);if(c>=f||e){let g=b;if(b&256)e=a[a.length-1];else{if(null==d)return g;e=a[f+(+!!(b&512)-1)]={};g|=256}e[c]=d;c<f&&(a[c+(+!!(b&512)-1)]=void 0);g!==b&&_.xa(a,g);return g}a[c+(+!!(b&512)-1)]=d;b&256&&(a=a[a.length-1],c in a&&delete a[c]);return b};
-_.jb=function(a,b,c,d){a=a.ka;let e=a[_.v];const f=_.ib(a,e,c,d);b=_.Sa(f,b,e);b!==f&&null!=b&&_.hb(a,e,c,b,d);return b};_.kb=function(a,b){return null!=a?a:b};
-mb=function(a,b,c){var d=lb?void 0:a.constructor.ta;const e=(c?a.ka:b)[_.v];a=b.length;if(!a)return b;let f,g;if(Da(c=b[a-1])){a:{var h=c;let n={},p=!1;for(var k in h){let t=h[k];if(Array.isArray(t)){let q=t;if(Ea(t,d,+k)||Ca(t)&&0===t.size)t=null;t!=q&&(p=!0)}null!=t?n[k]=t:p=!0}if(p){for(var l in n){h=n;break a}h=null}}h!=c&&(f=!0);a--}for(k=+!!(e&512)-1;0<a;a--){l=a-1;c=b[l];l-=k;if(!(null==c||Ea(c,d,l)||Ca(c)&&0===c.size))break;g=!0}if(!f&&!g)return b;b=Array.prototype.slice.call(b,0,a);h&&b.push(h);
-return b};_.w=function(a,b){return null!=a?!!a:!!b};_.x=function(a,b){void 0==b&&(b="");return null!=a?a:b};_.nb=function(a){for(const b in a)return!1;return!0};ob="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
-pb=function(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("a");};qb=pb(this);rb=function(a,b){if(b)a:{var c=qb;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&ob(c,a,{configurable:!0,writable:!0,value:b})}};rb("globalThis",function(a){return a||qb});
-rb("Promise.prototype.finally",function(a){return a?a:function(b){return this.then(function(c){return Promise.resolve(b()).then(function(){return c})},function(c){return Promise.resolve(b()).then(function(){throw c;})})}});var vb,wb,yb,zb;_.sb=_.sb||{};_.r=this||self;vb=function(a){var b=_.tb("WIZ_global_data.oxN3nb");a=b&&b[a];return null!=a?a:!1};wb=_.r._F_toggles||[];_.tb=function(a,b){a=a.split(".");b=b||_.r;for(var c=0;c<a.length;c++)if(b=b[a[c]],null==b)return null;return b};_.La=function(a){var b=typeof a;return"object"!=b?b:a?Array.isArray(a)?"array":b:"null"};_.xb="closure_uid_"+(1E9*Math.random()>>>0);yb=function(a,b,c){return a.call.apply(a.bind,arguments)};
-zb=function(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var e=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(e,d);return a.apply(b,e)}}return function(){return a.apply(b,arguments)}};_.y=function(a,b,c){_.y=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?yb:zb;return _.y.apply(null,arguments)};
-_.z=function(a,b){a=a.split(".");var c=_.r;a[0]in c||"undefined"==typeof c.execScript||c.execScript("var "+a[0]);for(var d;a.length&&(d=a.shift());)a.length||void 0===b?c[d]&&c[d]!==Object.prototype[d]?c=c[d]:c=c[d]={}:c[d]=b};_.A=function(a,b){function c(){}c.prototype=b.prototype;a.X=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.ej=function(d,e,f){for(var g=Array(arguments.length-2),h=2;h<arguments.length;h++)g[h-2]=arguments[h];return b.prototype[e].apply(d,g)}};_.A(_.aa,Error);_.aa.prototype.name="CustomError";_.Ab=String.prototype.trim?function(a){return a.trim()}:function(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]};var Bb=!!(wb[0]&512),Cb=!!(wb[0]&1024),Db=!!(wb[0]&8);var ea=Bb?Cb:vb(610401301),lb=Bb?Db:vb(188588736);var fa,Eb=_.r.navigator;fa=Eb?Eb.userAgentData||null:null;_.sa=function(a,b){return Array.prototype.indexOf.call(a,b,void 0)};_.Fb=function(a,b,c){Array.prototype.forEach.call(a,b,c)};_.Gb=function(a){_.Gb[" "](a);return a};_.Gb[" "]=function(){};var Tb;_.Hb=_.ja();_.Ib=_.ka();_.Jb=_.u("Edge");_.Kb=_.u("Gecko")&&!(-1!=_.da().toLowerCase().indexOf("webkit")&&!_.u("Edge"))&&!(_.u("Trident")||_.u("MSIE"))&&!_.u("Edge");_.Lb=-1!=_.da().toLowerCase().indexOf("webkit")&&!_.u("Edge");_.Mb=_.ra();_.Nb=oa()?"Windows"===fa.platform:_.u("Windows");_.Ob=oa()?"Android"===fa.platform:_.u("Android");_.Pb=pa();_.Qb=_.u("iPad");_.Rb=_.u("iPod");_.Sb=_.qa();
-a:{var Ub="",Vb=function(){var a=_.da();if(_.Kb)return/rv:([^\);]+)(\)|;)/.exec(a);if(_.Jb)return/Edge\/([\d\.]+)/.exec(a);if(_.Ib)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(_.Lb)return/WebKit\/(\S+)/.exec(a);if(_.Hb)return/(?:Version)[ \/]?(\S+)/.exec(a)}();Vb&&(Ub=Vb?Vb[1]:"");if(_.Ib){var Wb,Xb=_.r.document;Wb=Xb?Xb.documentMode:void 0;if(null!=Wb&&Wb>parseFloat(Ub)){Tb=String(Wb);break a}}Tb=Ub}_.Yb=Tb;_.Zb=_.la();_.$b=pa()||_.u("iPod");_.ac=_.u("iPad");_.bc=_.u("Android")&&!(ma()||_.la()||_.ja()||_.u("Silk"));_.cc=ma();_.dc=_.na()&&!_.qa();_.ec="undefined"!==typeof TextDecoder;_.fc="undefined"!==typeof TextEncoder;var gc;_.v=Symbol();gc=Symbol();_.hc=Symbol();_.xa=(a,b)=>{a[_.v]=b;return a};var Ba,ic,kc,lc,mc;_.Ra={};Ba={};kc=[];_.xa(kc,55);_.jc=Object.freeze(kc);lc=class{};mc=class{};Object.freeze(new lc);Object.freeze(new mc);_.nc=Object.freeze(new mc);var Ia=function(a,b){a.__closure__error__context__984382||(a.__closure__error__context__984382={});a.__closure__error__context__984382.severity=b};var oc;var Ta;_.pc=function(a,b){a=a.ka;return _.ib(a,a[_.v],b)};_.ib=function(a,b,c,d){if(-1===c)return null;const e=Aa(b);if(c>=e){if(b&256)return a[a.length-1][c]}else{var f=a.length;if(d&&b&256&&(d=a[f-1][c],null!=d)){if(gb(a,b,e,c)&&null!=gc){var g;a=null!=(g=oc)?g:oc={};g=a[gc]||0;4<=g||(a[gc]=g+1,_.Ja())}return d}return gb(a,b,e,c)}};_.qc=function(a,b,c){const d=a.ka;let e=d[_.v];_.Fa(e);_.hb(d,e,b,c);return a};
-_.C=function(a,b,c,d=!1){b=_.jb(a,b,c,d);if(null==b)return b;a=a.ka;let e=a[_.v];if(!(e&2)){const f=_.fb(b);f!==b&&(b=f,_.hb(a,e,c,b,d))}return b};_.E=function(a,b,c){null==c&&(c=void 0);return _.qc(a,b,c)};_.F=function(a,b){a=_.pc(a,b);return null==a||"boolean"===typeof a?a:"number"===typeof a?!!a:void 0};_.G=function(a,b){return _.Qa(_.pc(a,b))};_.I=function(a,b,c=!1){return _.kb(_.F(a,b),c)};_.J=function(a,b){return _.kb(_.G(a,b),"")};_.K=function(a,b,c){return _.qc(a,b,null==c?c:_.Ma(c))};
-_.L=function(a,b,c){return _.qc(a,b,null==c?c:_.Oa(c))};_.M=function(a,b,c){return _.qc(a,b,_.Pa(c))};_.N=function(a,b,c){return _.qc(a,b,null==c?c:_.Na(c))};_.O=class{constructor(a,b,c){this.ka=_.Va(a,b,c)}toJSON(){return ic?mb(this,this.ka,!1):mb(this,ab(this.ka,cb,void 0,void 0,!1),!0)}Ga(){ic=!0;try{return JSON.stringify(this.toJSON(),Xa)}finally{ic=!1}}vc(){return!!((this.ka[_.v]|0)&2)}};_.O.prototype.Hd=_.Ra;_.O.prototype.toString=function(){return mb(this,this.ka,!1).toString()};_.rc=Symbol();_.sc=Symbol();_.tc=Symbol();_.uc=Symbol();_.vc=Symbol();var wc=class extends _.O{constructor(){super()}};_.xc=class extends _.O{constructor(){super()}D(a){return _.L(this,3,a)}};var yc=class extends _.O{constructor(a){super(a)}Mc(a){return _.M(this,24,a)}};_.zc=class extends _.O{constructor(a){super(a)}};_.P=function(){this.Ea=this.Ea;this.ha=this.ha};_.P.prototype.Ea=!1;_.P.prototype.isDisposed=function(){return this.Ea};_.P.prototype.fa=function(){this.Ea||(this.Ea=!0,this.O())};_.P.prototype.O=function(){if(this.ha)for(;this.ha.length;)this.ha.shift()()};var Ac=class extends _.P{constructor(){var a=window;super();this.o=a;this.i=[];this.j={}}resolve(a){var b=this.o;a=a.split(".");for(var c=a.length,d=0;d<c;++d)if(b[a[d]])b=b[a[d]];else return null;return b instanceof Function?b:null}Eb(){for(var a=this.i.length,b=this.i,c=[],d=0;d<a;++d){var e=b[d].i(),f=this.resolve(e);if(f&&f!=this.j[e])try{b[d].Eb(f)}catch(g){}else c.push(b[d])}this.i=c.concat(b.slice(a))}};var Cc=class extends _.P{constructor(){var a=_.Bc;super();this.o=a;this.A=this.i=null;this.v=0;this.B={};this.j=!1;a=window.navigator.userAgent;0<=a.indexOf("MSIE")&&0<=a.indexOf("Trident")&&(a=/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a))&&a[1]&&9>parseFloat(a[1])&&(this.j=!0)}C(a,b){this.i=b;this.A=a;b.preventDefault?b.preventDefault():b.returnValue=!1}};_.Dc=class extends _.O{constructor(a){super(a)}};var Ec=class extends _.O{constructor(a){super(a)}};var Hc;_.Fc=function(a,b,c=98){if(a.i){const d=new wc;_.M(d,1,b.message);_.M(d,2,b.stack);_.L(d,3,b.lineNumber);_.N(d,5,1);b=new _.xc;_.E(b,40,d);a.i.log(c,b)}};Hc=class{constructor(){var a=Gc;this.i=null;_.I(a,4,!0)}log(a){_.Fc(this,a)}};var Ic,Jc;Ic=function(a){if(0<a.o.length){var b=void 0!==a.i,c=void 0!==a.j;if(b||c){b=b?a.v:a.A;c=a.o;a.o=[];try{_.Fb(c,b,a)}catch(d){console.error(d)}}}};_.Kc=class{constructor(a){this.i=a;this.j=void 0;this.o=[]}then(a,b,c){this.o.push(new Jc(a,b,c));Ic(this)}resolve(a){if(void 0!==this.i||void 0!==this.j)throw Error("B");this.i=a;Ic(this)}reject(a){if(void 0!==this.i||void 0!==this.j)throw Error("B");this.j=a;Ic(this)}v(a){a.j&&a.j.call(a.i,this.i)}A(a){a.o&&a.o.call(a.i,this.j)}};
-Jc=class{constructor(a,b,c){this.j=a;this.o=b;this.i=c}};_.Lc=a=>{var b="tc";if(a.tc&&a.hasOwnProperty(b))return a.tc;b=new a;return a.tc=b};_.Q=class{constructor(){this.v=new _.Kc;this.i=new _.Kc;this.D=new _.Kc;this.B=new _.Kc;this.C=new _.Kc;this.A=new _.Kc;this.o=new _.Kc;this.j=new _.Kc;this.F=new _.Kc}K(){return this.v}M(){return this.i}N(){return this.D}L(){return this.B}Ea(){return this.C}ha(){return this.A}J(){return this.o}G(){return this.j}static i(){return _.Lc(_.Q)}};var Qc;_.Nc=function(){return _.C(_.Mc,yc,1)};_.Oc=function(){return _.C(_.Mc,_.zc,5)};Qc=class extends _.O{constructor(){super(Pc)}};var Pc;window.gbar_&&window.gbar_.CONFIG?Pc=window.gbar_.CONFIG[0]||{}:Pc=[];_.Mc=new Qc;var Gc=_.C(_.Mc,Ec,3)||new Ec;_.Nc()||new yc;_.Bc=new Hc;_.z("gbar_._DumpException",function(a){_.Bc?_.Bc.log(a):console.error(a)});_.Rc=new Cc;var Tc;_.Uc=function(a,b){var c=_.Sc.i();if(a in c.i){if(c.i[a]!=b)throw new Tc;}else{c.i[a]=b;const h=c.j[a];if(h)for(let k=0,l=h.length;k<l;k++){b=h[k];var d=c.i;delete b.i[a];if(_.nb(b.i)){for(var e=b.j.length,f=Array(e),g=0;g<e;g++)f[g]=d[b.j[g]];b.o.apply(b.v,f)}}delete c.j[a]}};_.Sc=class{constructor(){this.i={};this.j={}}static i(){return _.Lc(_.Sc)}};_.Vc=class extends _.aa{constructor(){super()}};Tc=class extends _.Vc{};_.z("gbar.A",_.Kc);_.Kc.prototype.aa=_.Kc.prototype.then;_.z("gbar.B",_.Q);_.Q.prototype.ba=_.Q.prototype.M;_.Q.prototype.bb=_.Q.prototype.N;_.Q.prototype.bd=_.Q.prototype.Ea;_.Q.prototype.bf=_.Q.prototype.K;_.Q.prototype.bg=_.Q.prototype.L;_.Q.prototype.bh=_.Q.prototype.ha;_.Q.prototype.bj=_.Q.prototype.J;_.Q.prototype.bk=_.Q.prototype.G;_.z("gbar.a",_.Q.i());window.gbar&&window.gbar.ap&&window.gbar.ap(window.gbar.a);var Wc=new Ac;_.Uc("api",Wc);var Xc=_.Oc()||new _.zc,Yc=window,Zc=_.x(_.G(Xc,8));
-Yc.__PVT=Zc;_.Uc("eq",_.Rc);
-}catch(e){_._DumpException(e)}
-try{
-_.$c=class extends _.O{constructor(a){super(a)}};
-}catch(e){_._DumpException(e)}
-try{
-var ad=class extends _.O{constructor(){super()}};var bd=class extends _.P{constructor(){super();this.j=[];this.i=[]}o(a,b){this.j.push({features:a,options:b})}init(a,b,c){window.gapi={};var d=window.___jsl={};d.h=_.x(_.G(a,1));null!=_.F(a,12)&&(d.dpo=_.w(_.I(a,12)));d.ms=_.x(_.G(a,2));d.m=_.x(_.G(a,3));d.l=[];_.J(b,1)&&(a=_.G(b,3))&&this.i.push(a);_.J(c,1)&&(c=_.G(c,2))&&this.i.push(c);_.z("gapi.load",(0,_.y)(this.o,this));return this}};var cd=_.C(_.Mc,_.Dc,14);if(cd){var dd=_.C(_.Mc,_.$c,9)||new _.$c,ed=new ad,fd=new bd;fd.init(cd,dd,ed);_.Uc("gs",fd)};
-}catch(e){_._DumpException(e)}
-})(this.gbar_);
-// Google Inc.
-</script><style nonce="or_-72bfE4rtOQAdtumplQ">.gb_ib:not(.gb_kd){font:13px/27px Roboto,Arial,sans-serif;z-index:986}@-webkit-keyframes gb__a{0%{opacity:0}50%{opacity:1}}@keyframes gb__a{0%{opacity:0}50%{opacity:1}}a.gb_za{border:none;color:#4285f4;cursor:default;font-weight:bold;outline:none;position:relative;text-align:center;text-decoration:none;text-transform:uppercase;white-space:nowrap;-webkit-user-select:none}a.gb_za:hover:after,a.gb_za:focus:after{background-color:rgba(0,0,0,.12);content:"";height:100%;left:0;position:absolute;top:0;width:100%}a.gb_za:hover,a.gb_za:focus{text-decoration:none}a.gb_za:active{background-color:rgba(153,153,153,.4);text-decoration:none}a.gb_Aa{background-color:#4285f4;color:#fff}a.gb_Aa:active{background-color:#0043b2}.gb_Ba{box-shadow:0 1px 1px rgba(0,0,0,.16)}.gb_za,.gb_Aa,.gb_Ca,.gb_Da{display:inline-block;line-height:28px;padding:0 12px;border-radius:2px}.gb_Ca{background:#f8f8f8;border:1px solid #c6c6c6}.gb_Da{background:#f8f8f8}.gb_Ca,#gb a.gb_Ca.gb_Ca,.gb_Da{color:#666;cursor:default;text-decoration:none}#gb a.gb_Da{cursor:default;text-decoration:none}.gb_Da{border:1px solid #4285f4;font-weight:bold;outline:none;background:#4285f4;background:-webkit-gradient(linear,left top,left bottom,from(top),color-stop(#4387fd),to(#4683ea));background:-webkit-linear-gradient(top,#4387fd,#4683ea);background:linear-gradient(top,#4387fd,#4683ea);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=0)}#gb a.gb_Da{color:#fff}.gb_Da:hover{box-shadow:0 1px 0 rgba(0,0,0,.15)}.gb_Da:active{box-shadow:inset 0 2px 0 rgba(0,0,0,.15);background:#3c78dc;background:-webkit-gradient(linear,left top,left bottom,from(top),color-stop(#3c7ae4),to(#3f76d3));background:-webkit-linear-gradient(top,#3c7ae4,#3f76d3);background:linear-gradient(top,#3c7ae4,#3f76d3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3c7ae4,endColorstr=#3f76d3,GradientType=0)}#gb .gb_Ea{background:#fff;border:1px solid #dadce0;color:#1a73e8;display:inline-block;text-decoration:none}#gb .gb_Ea:hover{background:#f8fbff;border-color:#dadce0;color:#174ea6}#gb .gb_Ea:focus{background:#f4f8ff;color:#174ea6;outline:1px solid #174ea6}#gb .gb_Ea:active,#gb .gb_Ea:focus:active{background:#ecf3fe;color:#174ea6}#gb .gb_Ea.gb_i{background:transparent;border:1px solid #5f6368;color:#8ab4f8;text-decoration:none}#gb .gb_Ea.gb_i:hover{background:rgba(255,255,255,.04);color:#e8eaed}#gb .gb_Ea.gb_i:focus{background:rgba(232,234,237,.12);color:#e8eaed;outline:1px solid #e8eaed}#gb .gb_Ea.gb_i:active,#gb .gb_Ea.gb_i:focus:active{background:rgba(232,234,237,.1);color:#e8eaed}.gb_m{display:none!important}.gb_3a{visibility:hidden}.gb_x{display:inline-block;vertical-align:middle}.gb_Sd .gb_q{bottom:-3px;right:-5px}.gb_f{position:relative}.gb_d{display:inline-block;outline:none;vertical-align:middle;border-radius:2px;box-sizing:border-box;height:40px;width:40px;cursor:pointer;text-decoration:none}#gb#gb a.gb_d{cursor:pointer;text-decoration:none}.gb_d,a.gb_d{color:#000}.gb_if{border-color:transparent;border-bottom-color:#fff;border-style:dashed dashed solid;border-width:0 8.5px 8.5px;display:none;position:absolute;left:11.5px;top:33px;z-index:1;height:0;width:0;-webkit-animation:gb__a .2s;animation:gb__a .2s}.gb_jf{border-color:transparent;border-style:dashed dashed solid;border-width:0 8.5px 8.5px;display:none;position:absolute;left:11.5px;z-index:1;height:0;width:0;-webkit-animation:gb__a .2s;animation:gb__a .2s;border-bottom-color:rgba(0,0,0,.2);top:32px}x:-o-prefocus,div.gb_jf{border-bottom-color:#ccc}.gb_6{background:#fff;border:1px solid #ccc;border-color:rgba(0,0,0,.2);color:#000;-webkit-box-shadow:0 2px 10px rgba(0,0,0,.2);box-shadow:0 2px 10px rgba(0,0,0,.2);display:none;outline:none;overflow:hidden;position:absolute;right:8px;top:62px;-webkit-animation:gb__a .2s;animation:gb__a .2s;border-radius:2px;-webkit-user-select:text}.gb_x.gb_Na .gb_if,.gb_x.gb_Na .gb_jf,.gb_x.gb_Na .gb_6,.gb_Na.gb_6{display:block}.gb_x.gb_Na.gb_kf .gb_if,.gb_x.gb_Na.gb_kf .gb_jf{display:none}.gb_Td{position:absolute;right:8px;top:62px;z-index:-1}.gb_9a .gb_if,.gb_9a .gb_jf,.gb_9a .gb_6{margin-top:-10px}.gb_x:first-child,#gbsfw:first-child+.gb_x{padding-left:4px}.gb_Ra.gb_Ud .gb_x:first-child{padding-left:0}.gb_Vd{position:relative}.gb_u.gb_Dd.gb_gb.gb_rd{margin:0 12px;padding:0}.gb_u .gb_d{position:relative}.gb_u .gb_x{margin:0 4px;padding:4px}.gb_u .gb_Wd{display:inline-block}.gb_u a.gb_wd{-webkit-box-align:center;-webkit-align-items:center;-webkit-align-items:center;align-items:center;-webkit-border-radius:100px;border-radius:100px;border:0;background:#0b57d0;color:#fff;display:-webkit-inline-box;display:-webkit-inline-flex;display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;font-size:14px;font-weight:500;height:40px;white-space:nowrap;width:auto}.gb_u a.gb_d.gb_wd{margin:0 4px;padding:4px 24px 4px 24px}.gb_u a.gb_wd.gb_Xd{padding:9px 12px 9px 16px}.gb_u a.gb_wd.gb_Zd{background:transparent;border:1px solid #747775;color:#0b57d0;outline:0}.gb_u .gb_t{fill:#0b57d0}.gb_u .gb_0d{fill:#0b57d0;margin-left:8px}.gb_u .gb_0d circle{fill:#fff}.gb_u .gb_wd .gb_Md{-webkit-box-flex:1;-webkit-flex-grow:1;-webkit-box-flex:1;box-flex:1;-webkit-flex-grow:1;flex-grow:1;text-align:center}.gb_u .gb_wd:hover{background:#3763cd}.gb_u .gb_wd:hover .gb_0d{fill:#3763cd}.gb_u .gb_wd:focus,.gb_u .gb_wd:active,.gb_u .gb_wd:focus:hover,.gb_u .gb_wd[aria-expanded=true],.gb_u .gb_wd:hover[aria-expanded=true]{background:#416acf}.gb_u .gb_wd:focus .gb_0d,.gb_u .gb_wd:active .gb_0d,.gb_u .gb_wd:focus:hover .gb_0d,.gb_u .gb_wd[aria-expanded=true] .gb_0d,.gb_u .gb_wd:hover[aria-expanded=true] .gb_0d{fill:#416acf}.gb_u .gb_wd:focus,.gb_u .gb_wd:active,.gb_u .gb_wd[aria-expanded=true]{-webkit-box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3)}.gb_u .gb_wd:focus-visible{outline:1px solid #416acf;outline-offset:2px}.gb_u .gb_Ia:focus-visible{outline:1px solid #416acf}.gb_u .gb_i.gb_wd{background:#a8c7fa;color:#062e6f}.gb_u .gb_i.gb_wd .gb_0d{fill:#a8c7fa}.gb_u .gb_i.gb_wd .gb_0d circle{fill:#062e6f}.gb_u .gb_i.gb_wd:hover{background:#b4cbf6}.gb_u .gb_i.gb_wd:hover .gb_0d{fill:#b4cbf6}.gb_u .gb_i.gb_wd:focus,.gb_u .gb_i.gb_wd:focus:hover,.gb_u .gb_i.gb_wd:active,.gb_u .gb_i.gb_wd[aria-expanded=true],.gb_u .gb_i.gb_wd:hover[aria-expanded=true]{background:#b8cdf7}.gb_u .gb_i.gb_wd:focus .gb_0d,.gb_u .gb_i.gb_wd:focus:hover .gb_0d,.gb_u .gb_i.gb_wd:active .gb_0d,.gb_u .gb_i.gb_wd[aria-expanded=true] .gb_0d,.gb_u .gb_i.gb_wd:hover[aria-expanded=true] .gb_0d{fill:#b8cdf7}.gb_u .gb_i.gb_wd:focus-visible{outline-color:#b8cdf7}.gb_u .gb_i.gb_wd:focus,.gb_u .gb_i.gb_wd:active,.gb_u .gb_i.gb_wd[aria-expanded=true]{-webkit-box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3)}.gb_u .gb_wd.gb_Zd:hover,.gb_u .gb_wd.gb_Zd:focus,.gb_u .gb_wd.gb_Zd[aria-expanded=true],.gb_u .gb_wd.gb_Zd:hover[aria-expanded=true]{background:rgba(11,87,208,.08);-webkit-box-shadow:none;box-shadow:none}.gb_u .gb_wd.gb_Zd:active{background:rgba(11,87,208,.12);-webkit-box-shadow:none;box-shadow:none}.gb_u .gb_wd.gb_Zd:focus-visible{border-color:#0b57d0;outline:0}.gb_u .gb_i.gb_wd.gb_Zd{background:transparent;color:#a8c7fa}.gb_u .gb_i.gb_wd.gb_Zd:hover,.gb_u .gb_i.gb_wd.gb_Zd:focus,.gb_u .gb_i.gb_wd.gb_Zd[aria-expanded=true],.gb_u .gb_i.gb_wd.gb_Zd:hover[aria-expanded=true]{background:rgba(168,199,250,.08);-webkit-box-shadow:none;box-shadow:none}.gb_u .gb_i.gb_wd.gb_Zd:active{background:rgba(168,199,250,.12);-webkit-box-shadow:none;box-shadow:none}.gb_u .gb_i.gb_wd.gb_Zd:focus-visible{border-color:#a8c7fa;outline:0}.gb_i .gb_u .gb_t{fill:#a8c7fa}.gb_i .gb_u .gb_Ia:focus-visible{outline-color:#a8c7fa}.gb_7c .gb_Vd,.gb_md .gb_Vd{float:right}.gb_d{padding:8px;cursor:pointer}.gb_d:after{content:"";position:absolute;top:-4px;bottom:-4px;left:-4px;right:-4px}.gb_Ra .gb_ne:not(.gb_za):focus img{background-color:rgba(0,0,0,.2);outline:none;-webkit-border-radius:50%;border-radius:50%}.gb_1d button svg,.gb_d{-webkit-border-radius:50%;border-radius:50%}.gb_1d button:focus:not(:focus-visible) svg,.gb_1d button:hover svg,.gb_1d button:active svg,.gb_d:focus:not(:focus-visible),.gb_d:hover,.gb_d:active,.gb_d[aria-expanded=true]{outline:none}.gb_Qc .gb_1d.gb_we button:focus-visible svg,.gb_1d button:focus-visible svg,.gb_d:focus-visible{outline:1px solid #202124}.gb_Qc .gb_1d button:focus-visible svg,.gb_Qc .gb_d:focus-visible{outline:1px solid #f1f3f4}@media (forced-colors:active){.gb_Qc .gb_1d.gb_we button:focus-visible svg,.gb_1d button:focus-visible svg,.gb_Qc .gb_1d button:focus-visible svg{outline:1px solid currentcolor}}.gb_Qc .gb_1d.gb_we button:focus svg,.gb_Qc .gb_1d.gb_we button:focus:hover svg,.gb_1d button:focus svg,.gb_1d button:focus:hover svg,.gb_d:focus,.gb_d:focus:hover{background-color:rgba(60,64,67,.1)}.gb_Qc .gb_1d.gb_we button:active svg,.gb_1d button:active svg,.gb_d:active{background-color:rgba(60,64,67,.12)}.gb_Qc .gb_1d.gb_we button:hover svg,.gb_1d button:hover svg,.gb_d:hover{background-color:rgba(60,64,67,.08)}.gb_Fa .gb_d.gb_Ia:hover{background-color:transparent}.gb_d[aria-expanded=true],.gb_d:hover[aria-expanded=true]{background-color:rgba(95,99,104,.24)}.gb_d[aria-expanded=true] .gb_h{fill:#5f6368;opacity:1}.gb_Qc .gb_1d button:hover svg,.gb_Qc .gb_d:hover{background-color:rgba(232,234,237,.08)}.gb_Qc .gb_1d button:focus svg,.gb_Qc .gb_1d button:focus:hover svg,.gb_Qc .gb_d:focus,.gb_Qc .gb_d:focus:hover{background-color:rgba(232,234,237,.1)}.gb_Qc .gb_1d button:active svg,.gb_Qc .gb_d:active{background-color:rgba(232,234,237,.12)}.gb_Qc .gb_d[aria-expanded=true],.gb_Qc .gb_d:hover[aria-expanded=true]{background-color:rgba(255,255,255,.12)}.gb_Qc .gb_d[aria-expanded=true] .gb_h{fill:#fff;opacity:1}.gb_x{padding:4px}.gb_Ra.gb_Ud .gb_x{padding:4px 2px}.gb_Ra.gb_Ud .gb_b.gb_x{padding-left:6px}.gb_6{z-index:991;line-height:normal}.gb_6.gb_2d{left:0;right:auto}@media (max-width:350px){.gb_6.gb_2d{left:0}}.gb_3d .gb_6{top:56px}.gb_k .gb_d,.gb_5 .gb_k .gb_d{background-position:-64px -29px}.gb_L .gb_k .gb_d{background-position:-29px -29px;opacity:1}.gb_k .gb_d,.gb_k .gb_d:hover,.gb_k .gb_d:focus{opacity:1}.gb_n{display:none}@media screen and (max-width:319px){.gb_sd:not(.gb_yd) .gb_k{display:none;visibility:hidden}}.gb_q{display:none}.gb_fd{font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;letter-spacing:0.25px;line-height:48px;margin-bottom:2px;opacity:1;overflow:hidden;padding-left:16px;position:relative;text-overflow:ellipsis;vertical-align:middle;top:2px;white-space:nowrap;-webkit-flex:1 1 auto;-webkit-box-flex:1;flex:1 1 auto}.gb_fd.gb_gd{color:#3c4043}.gb_Ra.gb_Sa .gb_fd{margin-bottom:0}.gb_hd.gb_id .gb_fd{padding-left:4px}.gb_Ra.gb_Sa .gb_jd{position:relative;top:-2px}.gb_Ra{color:black;min-width:160px;position:relative;-webkit-transition:box-shadow 250ms;transition:box-shadow 250ms}.gb_Ra.gb_Zc{min-width:120px}.gb_Ra.gb_qd .gb_rd{display:none}.gb_Ra.gb_qd .gb_sd{height:56px}header.gb_Ra{display:block}.gb_Ra svg{fill:currentColor}.gb_td{position:fixed;top:0;width:100%}.gb_ud{-webkit-box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2)}.gb_vd{height:64px}.gb_sd{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;width:100%;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:space-between;-webkit-justify-content:space-between;justify-content:space-between;min-width:-webkit-min-content;min-width:min-content}.gb_Ra:not(.gb_Sa) .gb_sd{padding:8px}.gb_Ra.gb_xd .gb_sd{-webkit-flex:1 0 auto;-webkit-box-flex:1;flex:1 0 auto}.gb_Ra .gb_sd.gb_yd.gb_zd{min-width:0}.gb_Ra.gb_Sa .gb_sd{padding:4px;padding-left:8px;min-width:0}.gb_rd{height:48px;vertical-align:middle;white-space:nowrap;-webkit-box-align:center;-webkit-align-items:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-user-select:none}.gb_Bd>.gb_rd{display:table-cell;width:100%}.gb_hd{padding-right:30px;box-sizing:border-box;-webkit-flex:1 0 auto;-webkit-box-flex:1;flex:1 0 auto}.gb_Ra.gb_Sa .gb_hd{padding-right:14px}.gb_Cd{-webkit-flex:1 1 100%;-webkit-box-flex:1;flex:1 1 100%}.gb_Cd>:only-child{display:inline-block}.gb_Dd.gb_8c{padding-left:4px}.gb_Dd.gb_Ed,.gb_Ra.gb_xd .gb_Dd,.gb_Ra.gb_Sa:not(.gb_md) .gb_Dd{padding-left:0}.gb_Ra.gb_Sa .gb_Dd.gb_Ed{padding-right:0}.gb_Ra.gb_Sa .gb_Dd.gb_Ed .gb_Fa{margin-left:10px}.gb_8c{display:inline}.gb_Ra.gb_2c .gb_Dd.gb_Fd,.gb_Ra.gb_md .gb_Dd.gb_Fd{padding-left:2px}.gb_fd{display:inline-block}.gb_Dd{-webkit-box-sizing:border-box;box-sizing:border-box;height:48px;line-height:normal;padding:0 4px;padding-left:30px;-webkit-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;justify-content:flex-end}.gb_md{height:48px}.gb_Ra.gb_md{min-width:auto}.gb_md .gb_Dd{float:right;padding-left:32px}.gb_md .gb_Dd.gb_Hd{padding-left:0}.gb_Id{font-size:14px;max-width:200px;overflow:hidden;padding:0 12px;text-overflow:ellipsis;white-space:nowrap;-webkit-user-select:text}.gb_ld{-webkit-transition:background-color .4s;-webkit-transition:background-color .4s;transition:background-color .4s}.gb_Od{color:black}.gb_Qc{color:white}.gb_Ra a,.gb_Vc a{color:inherit}.gb_V{color:rgba(0,0,0,.87)}.gb_Ra svg,.gb_Vc svg,.gb_hd .gb_pd,.gb_7c .gb_pd{color:#5f6368;opacity:1}.gb_Qc svg,.gb_Vc.gb_0c svg,.gb_Qc .gb_hd .gb_pd,.gb_Qc .gb_hd .gb_Pc,.gb_Qc .gb_hd .gb_jd,.gb_Vc.gb_0c .gb_pd{color:rgba(255,255,255,.87)}.gb_Qc .gb_hd .gb_Oc:not(.gb_Pd){opacity:.87}.gb_gd{color:inherit;opacity:1;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}.gb_Qc .gb_gd,.gb_Od .gb_gd{opacity:1}.gb_Jd{position:relative}.gb_Kd{font-family:arial,sans-serif;line-height:normal;padding-right:15px}a.gb_I,span.gb_I{color:rgba(0,0,0,.87);text-decoration:none}.gb_Qc a.gb_I,.gb_Qc span.gb_I{color:white}a.gb_I:focus{outline-offset:2px}a.gb_I:hover{text-decoration:underline}.gb_J{display:inline-block;padding-left:15px}.gb_J .gb_I{display:inline-block;line-height:24px;vertical-align:middle}.gb_nd{font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:.25px;line-height:16px;margin-left:10px;margin-right:8px;min-width:96px;padding:9px 23px;text-align:center;vertical-align:middle;border-radius:4px;box-sizing:border-box}.gb_Ra.gb_md .gb_nd{margin-left:8px}#gb a.gb_Da.gb_nd{cursor:pointer}.gb_Da.gb_nd:hover{background:#1b66c9;-webkit-box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3)}.gb_Da.gb_nd:focus,.gb_Da.gb_nd:hover:focus{background:#1c5fba;-webkit-box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3)}.gb_Da.gb_nd:active{background:#1b63c1;-webkit-box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);box-shadow:0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3)}.gb_nd{background:#1a73e8;border:1px solid transparent}.gb_Ra.gb_Sa .gb_nd{padding:9px 15px;min-width:80px}.gb_Ld{text-align:left}#gb .gb_Qc a.gb_nd:not(.gb_i),#gb.gb_Qc a.gb_nd:not(.gb_Qd){background:#fff;border-color:#dadce0;-webkit-box-shadow:none;box-shadow:none;color:#1a73e8}#gb a.gb_Da.gb_i.gb_nd{background:#8ab4f8;border:1px solid transparent;-webkit-box-shadow:none;box-shadow:none;color:#202124}#gb .gb_Qc a.gb_nd:hover:not(.gb_i),#gb.gb_Qc a.gb_nd:not(.gb_Qd):hover{background:#f8fbff;border-color:#cce0fc}#gb a.gb_Da.gb_i.gb_nd:hover{background:#93baf9;border-color:transparent;-webkit-box-shadow:0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.3);box-shadow:0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.3)}#gb .gb_Qc a.gb_nd:focus:not(.gb_i),#gb .gb_Qc a.gb_nd:focus:hover:not(.gb_i),#gb.gb_Qc a.gb_nd:focus:not(.gb_i),#gb.gb_Qc a.gb_nd:focus:hover:not(.gb_i){background:#f4f8ff;outline:1px solid #c9ddfc}#gb a.gb_Da.gb_i.gb_nd:focus,#gb a.gb_Da.gb_i.gb_nd:focus:hover{background:#a6c6fa;border-color:transparent;-webkit-box-shadow:none;box-shadow:none}#gb .gb_Qc a.gb_nd:active:not(.gb_i),#gb.gb_Qc a.gb_nd:not(.gb_Qd):active{background:#ecf3fe}#gb a.gb_Da.gb_i.gb_nd:active{background:#a1c3f9;-webkit-box-shadow:0 1px 2px rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);box-shadow:0 1px 2px rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15)}.gb_l{display:none}@media screen and (max-width:319px){.gb_sd:not(.gb_yd) .gb_k{display:none;visibility:hidden}}.gb_Fa{background-color:rgba(255,255,255,.88);border:1px solid #dadce0;-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:inline-block;max-height:48px;overflow:hidden;outline:none;padding:0;vertical-align:middle;width:134px;-webkit-border-radius:8px;border-radius:8px}.gb_Fa.gb_i{background-color:transparent;border:1px solid #5f6368}.gb_Ma{display:inherit}.gb_Fa.gb_i .gb_Ma{background:#fff;-webkit-border-radius:4px;border-radius:4px;display:inline-block;left:8px;margin-right:5px;position:relative;padding:3px;top:-1px}.gb_Fa:hover{border:1px solid #d2e3fc;background-color:rgba(248,250,255,.88)}.gb_Fa.gb_i:hover{background-color:rgba(241,243,244,.04);border:1px solid #5f6368}.gb_Fa:focus-visible,.gb_Fa:focus{background-color:#fff;outline:1px solid #202124;-webkit-box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15)}.gb_Fa.gb_i:focus-visible,.gb_Fa.gb_i:focus{background-color:rgba(241,243,244,.12);outline:1px solid #f1f3f4;-webkit-box-shadow:0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px 0 rgba(0,0,0,.3);box-shadow:0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px 0 rgba(0,0,0,.3)}.gb_Fa.gb_i:active,.gb_Fa.gb_Na.gb_i:focus{background-color:rgba(241,243,244,.1);border:1px solid #5f6368}.gb_Oa{display:inline-block;padding-bottom:2px;padding-left:7px;padding-top:2px;text-align:center;vertical-align:middle;line-height:32px;width:78px}.gb_Fa.gb_i .gb_Oa{line-height:26px;margin-left:0;padding-bottom:0;padding-left:0;padding-top:0;width:72px}.gb_Oa.gb_Pa{background-color:#f1f3f4;-webkit-border-radius:4px;border-radius:4px;margin-left:8px;padding-left:0;line-height:30px}.gb_Oa.gb_Pa .gb_Qa{vertical-align:middle}.gb_Ra:not(.gb_Sa) .gb_Fa{margin-left:10px;margin-right:4px}.gb_Ta{max-height:32px;width:78px}.gb_Fa.gb_i .gb_Ta{max-height:26px;width:72px}.gb_p{-webkit-background-size:32px 32px;background-size:32px 32px;border:0;-webkit-border-radius:50%;border-radius:50%;display:block;margin:0px;position:relative;height:32px;width:32px;z-index:0}.gb_4a{background-color:#e8f0fe;border:1px solid rgba(32,33,36,.08);position:relative}.gb_4a.gb_p{height:30px;width:30px}.gb_4a.gb_p:hover,.gb_4a.gb_p:active{-webkit-box-shadow:none;box-shadow:none}.gb_5a{background:#fff;border:none;-webkit-border-radius:50%;border-radius:50%;bottom:2px;-webkit-box-shadow:0px 1px 2px 0px rgba(60,64,67,.30),0px 1px 3px 1px rgba(60,64,67,.15);box-shadow:0px 1px 2px 0px rgba(60,64,67,.30),0px 1px 3px 1px rgba(60,64,67,.15);height:14px;margin:2px;position:absolute;right:0;width:14px}.gb_6a{color:#1f71e7;font:400 22px/32px Google Sans,Roboto,Helvetica,Arial,sans-serif;text-align:center;text-transform:uppercase}@media (-webkit-min-device-pixel-ratio:1.25),(min-resolution:1.25dppx),(min-device-pixel-ratio:1.25){.gb_p::before,.gb_7a::before{display:inline-block;-webkit-transform:scale(0.5);-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:left 0;-webkit-transform-origin:left 0;transform-origin:left 0}.gb_N .gb_7a::before{-webkit-transform:scale(scale(0.416666667));-webkit-transform:scale(scale(0.416666667));transform:scale(scale(0.416666667))}}.gb_p:hover,.gb_p:focus{-webkit-box-shadow:0 1px 0 rgba(0,0,0,.15);box-shadow:0 1px 0 rgba(0,0,0,.15)}.gb_p:active{-webkit-box-shadow:inset 0 2px 0 rgba(0,0,0,.15);box-shadow:inset 0 2px 0 rgba(0,0,0,.15)}.gb_p:active::after{background:rgba(0,0,0,.1);-webkit-border-radius:50%;border-radius:50%;content:"";display:block;height:100%}.gb_8a{cursor:pointer;line-height:40px;min-width:30px;opacity:.75;overflow:hidden;vertical-align:middle;text-overflow:ellipsis}.gb_d.gb_8a{width:auto}.gb_8a:hover,.gb_8a:focus{opacity:.85}.gb_9a .gb_8a,.gb_9a .gb_ab{line-height:26px}#gb#gb.gb_9a a.gb_8a,.gb_9a .gb_ab{font-size:11px;height:auto}.gb_bb{border-top:4px solid #000;border-left:4px dashed transparent;border-right:4px dashed transparent;display:inline-block;margin-left:6px;opacity:.75;vertical-align:middle}.gb_Ia:hover .gb_bb{opacity:.85}.gb_Fa>.gb_b{padding:3px 3px 3px 4px}.gb_cb.gb_3a{color:#fff}.gb_L .gb_8a,.gb_L .gb_bb{opacity:1}#gb#gb.gb_L.gb_L a.gb_8a,#gb#gb .gb_L.gb_L a.gb_8a{color:#fff}.gb_L.gb_L .gb_bb{border-top-color:#fff;opacity:1}.gb_5 .gb_p:hover,.gb_L .gb_p:hover,.gb_5 .gb_p:focus,.gb_L .gb_p:focus{-webkit-box-shadow:0 1px 0 rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 0 rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.2)}.gb_db .gb_b,.gb_eb .gb_b{position:absolute;right:1px}.gb_b.gb_K,.gb_fb.gb_K,.gb_Ia.gb_K{-webkit-flex:0 1 auto;-webkit-box-flex:0;flex:0 1 auto}.gb_gb.gb_hb .gb_8a{width:30px!important}.gb_o{height:40px;position:absolute;right:-5px;top:-5px;width:40px}.gb_ib .gb_o,.gb_jb .gb_o{right:0;top:0}.gb_b .gb_d{padding:4px}.gb_r{display:none}sentinel{}</style><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['ogb_hl']=new Date().getTime(); </script><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['hl']=new Date().getTime(); </script></head><body dir="ltr" role="application" class="yYWAMb XV0XSd KkxPLb bvmRsc" itemscope itemtype="http://schema.org/CreativeWork/FileObject"><div style="display:none"><div id="one-google-bar" class="ndfHFb-c4YZDc-Woal0c-jcJzye-ZMv3u ndfHFb-c4YZDc-n1UuX-Bz112c"><div class="gb_Ra gb_md gb_ib gb_i gb_Qc" id="gb" style="background-color:transparent"><div class="gb_Dd gb_gb gb_rd" ng-non-bindable="" data-ogsr-up="" style="padding:0;height:auto;display:block"><div class="gb_Vd" style="display:block"><div class="gb_8c"></div><div class="gb_b gb_x gb_4f gb_K"><div class="gb_f gb_fb gb_4f gb_K"><a class="gb_d gb_Ia gb_K" aria-label="Аккаунт Google: Meira Beloritskaya  &#10;(meiramirth@gmail.com)" href="https://accounts.google.com/SignOutOptions?hl=ru&amp;continue=https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view%3Fusp%3Dsharing&amp;service=writely&amp;ec=GBRAGQ" tabindex="0" role="button"><div class="gb_o"><svg focusable="false" height="40px" version="1.1" viewbox="0 0 40 40" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="opacity:1.0"><path d="M4.02,28.27C2.73,25.8,2,22.98,2,20c0-2.87,0.68-5.59,1.88-8l-1.72-1.04C0.78,13.67,0,16.75,0,20c0,3.31,0.8,6.43,2.23,9.18L4.02,28.27z" fill="#F6AD01"></path><path d="M32.15,33.27C28.95,36.21,24.68,38,20,38c-6.95,0-12.98-3.95-15.99-9.73l-1.79,0.91C5.55,35.61,12.26,40,20,40c5.2,0,9.93-1.98,13.48-5.23L32.15,33.27z" fill="#249A41"></path><path d="M33.49,34.77C37.49,31.12,40,25.85,40,20c0-5.86-2.52-11.13-6.54-14.79l-1.37,1.46C35.72,9.97,38,14.72,38,20c0,5.25-2.26,9.98-5.85,13.27L33.49,34.77z" fill="#3174F1"></path><path d="M20,2c4.65,0,8.89,1.77,12.09,4.67l1.37-1.46C29.91,1.97,25.19,0,20,0l0,0C12.21,0,5.46,4.46,2.16,10.96L3.88,12C6.83,6.08,12.95,2,20,2" fill="#E92D18"></path></svg></div><img class="gb_p gbii" src="https://lh3.google.com/u/0/ogw/AF2bZyjmTJc7ytzernO_FjjIEJ46S6utBqkFrv8hWmp2nZIFaQ=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/AF2bZyjmTJc7ytzernO_FjjIEJ46S6utBqkFrv8hWmp2nZIFaQ=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/AF2bZyjmTJc7ytzernO_FjjIEJ46S6utBqkFrv8hWmp2nZIFaQ=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft=""></a></div></div></div></div></div><script nonce="lnrOD2Pv0TWku_rA--GT2A">this.gbar_=this.gbar_||{};(function(_){var window=this;
-try{
-_.gd=function(a,b,c){if(!a.j)if(c instanceof Array)for(var d of c)_.gd(a,b,d);else{d=(0,_.y)(a.C,a,b);const e=a.v+c;a.v++;b.dataset.eqid=e;a.B[e]=d;b&&b.addEventListener?b.addEventListener(c,d,!1):b&&b.attachEvent?b.attachEvent("on"+c,d):a.o.log(Error("z`"+b))}};
-}catch(e){_._DumpException(e)}
-try{
-_.hd=function(){if(!_.r.addEventListener||!Object.defineProperty)return!1;var a=!1,b=Object.defineProperty({},"passive",{get:function(){a=!0}});try{const c=()=>{};_.r.addEventListener("test",c,b);_.r.removeEventListener("test",c,b)}catch(c){}return a}();
-}catch(e){_._DumpException(e)}
-try{
-var id=document.querySelector(".gb_k .gb_d"),jd=document.querySelector("#gb.gb_Zc");id&&!jd&&_.gd(_.Rc,id,"click");
-}catch(e){_._DumpException(e)}
-try{
-_.jh=function(a){const b=[];let c=0;for(const d in a)b[c++]=a[d];return b};_.kh=function(a){if(a.v)return a.v;for(const b in a.i)if(a.i[b].qa()&&a.i[b].B())return a.i[b];return null};_.lh=function(a,b){a.i[b.K()]=b};var mh=new class extends _.P{constructor(){var a=_.Bc;super();this.B=a;this.v=null;this.o={};this.C={};this.i={};this.j=null}A(a){this.i[a]&&(_.kh(this)&&_.kh(this).K()==a||this.i[a].P(!0))}Xa(a){this.j=a;for(const b in this.i)this.i[b].qa()&&this.i[b].Xa(a)}oc(a){return a in this.i?this.i[a]:null}};_.Uc("dd",mh);
-}catch(e){_._DumpException(e)}
-try{
-_.Ei=function(a,b){return _.K(a,36,b)};
-}catch(e){_._DumpException(e)}
-try{
-var Fi=document.querySelector(".gb_b .gb_d"),Gi=document.querySelector("#gb.gb_Zc");Fi&&!Gi&&_.gd(_.Rc,Fi,"click");
-}catch(e){_._DumpException(e)}
-})(this.gbar_);
-// Google Inc.
-</script></div></div><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['ogb_bl']=new Date().getTime(); </script><meta itemprop="name" content="operations.json"><meta itemprop="faviconUrl" content="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"><meta itemprop="url" content="https://drive.google.com/file/d/1C0bUdTxUhck-7BoqXSR1wIEp33BH5YXy/view?usp=sharing&amp;usp=embed_googleplus"><div ng-non-bindable=""><div class="gb_r"><div class="gb_Hc"><div>Аккаунт Google</div><div class="gb_Hb">Meira Beloritskaya</div><div>meiramirth@gmail.com</div></div></div></div><script nonce="lnrOD2Pv0TWku_rA--GT2A">this.gbar_=this.gbar_||{};(function(_){var window=this;
-try{
-var md;_.kd=function(a){var b=typeof a;return"object"==b&&null!=a||"function"==b};_.ld=class extends _.O{constructor(a){super(a)}};md=class extends _.Vc{};_.nd=function(a,b){if(b in a.i)return a.i[b];throw new md;};_.od=function(a){return _.nd(_.Sc.i(),a)};
-}catch(e){_._DumpException(e)}
-try{
-/*
-
- SPDX-License-Identifier: Apache-2.0
-*/
-var ud,Dd,Fd;_.pd=function(a){if(null==a)return a;if("string"===typeof a){if(!a)return;a=+a}if("number"===typeof a)return Number.isFinite(a)?a|0:void 0};_.qd=function(a){const b=a.length;if(0<b){const c=Array(b);for(let d=0;d<b;d++)c[d]=a[d];return c}return[]};_.sd=function(a){if(a instanceof _.rd)return a.i;throw Error("D");};ud=function(a){return new td(b=>b.substr(0,a.length+1).toLowerCase()===a+":")};
-_.wd=function(a,b=_.vd){if(a instanceof _.rd)return a;for(let c=0;c<b.length;++c){const d=b[c];if(d instanceof td&&d.Yg(a))return new _.rd(a)}};_.yd=function(a){if(xd.test(a))return a};_.zd=function(a){return a instanceof _.rd?_.sd(a):_.yd(a)};_.Ad=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var d=c.slice();d.push.apply(d,arguments);return a.apply(this,d)}};_.Bd=function(a,b,c){return void 0!==_.jb(a,b,c,!1)};_.Cd=function(a,b){return _.pd(_.pc(a,b))};
-_.R=function(a,b){a=_.pc(a,b);return null==a?a:Number.isFinite(a)?a|0:void 0};_.S=function(a,b,c=0){return _.kb(_.Cd(a,b),c)};Dd=0;_.Ed=function(a){return Object.prototype.hasOwnProperty.call(a,_.xb)&&a[_.xb]||(a[_.xb]=++Dd)};Fd=function(a){return a};_.Gd=function(a){var b=null,c=_.r.trustedTypes;if(!c||!c.createPolicy)return b;try{b=c.createPolicy(a,{createHTML:Fd,createScript:Fd,createScriptURL:Fd})}catch(d){_.r.console&&_.r.console.error(d.message)}return b};
-_.Hd=function(a,b){return 0==a.lastIndexOf(b,0)};_.Id=function(a,b){return Array.prototype.some.call(a,b,void 0)};try{(new self.OffscreenCanvas(0,0)).getContext("2d")}catch(a){};var Jd;_.Kd=function(){void 0===Jd&&(Jd=_.Gd("ogb-qtm#html"));return Jd};var Nd;_.Ld=class{constructor(a){this.i=a}toString(){return this.i+""}};_.Md=function(a){return a instanceof _.Ld&&a.constructor===_.Ld?a.i:"type_error:TrustedResourceUrl"};Nd={};_.Od=function(a){const b=_.Kd();a=b?b.createScriptURL(a):a;return new _.Ld(a,Nd)};_.rd=class{constructor(a){this.i=a}toString(){return this.i}};_.Pd=new _.rd("about:invalid#zClosurez");var td,xd;td=class{constructor(a){this.Yg=a}};_.vd=[ud("data"),ud("http"),ud("https"),ud("mailto"),ud("ftp"),new td(a=>/^[^:]*([/?#]|$)/.test(a))];xd=/^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;_.Qd={};_.Rd=class{constructor(a){this.i=a}toString(){return this.i.toString()}};_.Sd=new _.Rd("",_.Qd);_.Td=RegExp("^[-+,.\"'%_!#/ a-zA-Z0-9\\[\\]]+$");_.Ud=RegExp("\\b(url\\([ \t\n]*)('[ -&(-\\[\\]-~]*'|\"[ !#-\\[\\]-~]*\"|[!#-&*-\\[\\]-~]*)([ \t\n]*\\))","g");_.Vd=RegExp("\\b(calc|cubic-bezier|fit-content|hsl|hsla|linear-gradient|matrix|minmax|radial-gradient|repeat|rgb|rgba|(rotate|scale|translate)(X|Y|Z|3d)?|steps|var)\\([-+*/0-9a-zA-Z.%#\\[\\], ]+\\)","g");_.Wd={};_.Yd=function(a){return a instanceof _.Xd&&a.constructor===_.Xd?a.i:"type_error:SafeHtml"};_.Xd=class{constructor(a){this.i=a}toString(){return this.i.toString()}};_.Zd=new _.Xd(_.r.trustedTypes&&_.r.trustedTypes.emptyHTML||"",_.Wd);var ae;_.$d=function(a){let b=!1,c;return function(){b||(c=a(),b=!0);return c}}(function(){var a=document.createElement("div"),b=document.createElement("div");b.appendChild(document.createElement("div"));a.appendChild(b);b=a.firstChild.firstChild;a.innerHTML=_.Yd(_.Zd);return!b.parentElement});ae=/^[\w+/_-]+[=]{0,2}$/;
-_.be=function(a){a=(a||_.r).document;return a.querySelector?(a=a.querySelector('style[nonce],link[rel="stylesheet"][nonce]'))&&(a=a.nonce||a.getAttribute("nonce"))&&ae.test(a)?a:"":""};_.ce=function(a,b){this.width=a;this.height=b};_.m=_.ce.prototype;_.m.aspectRatio=function(){return this.width/this.height};_.m.Gb=function(){return!(this.width*this.height)};_.m.ceil=function(){this.width=Math.ceil(this.width);this.height=Math.ceil(this.height);return this};_.m.floor=function(){this.width=Math.floor(this.width);this.height=Math.floor(this.height);return this};_.m.round=function(){this.width=Math.round(this.width);this.height=Math.round(this.height);return this};_.T=function(a,b){var c=b||document;if(c.getElementsByClassName)a=c.getElementsByClassName(a)[0];else{c=document;var d=b||c;a=d.querySelectorAll&&d.querySelector&&a?d.querySelector(a?"."+a:""):_.de(c,a,b)[0]||null}return a||null};
-_.de=function(a,b,c){var d;a=c||a;if(a.querySelectorAll&&a.querySelector&&b)return a.querySelectorAll(b?"."+b:"");if(b&&a.getElementsByClassName){var e=a.getElementsByClassName(b);return e}e=a.getElementsByTagName("*");if(b){var f={};for(c=d=0;a=e[c];c++){var g=a.className;"function"==typeof g.split&&_.ta(g.split(/\s+/),b)&&(f[d++]=a)}f.length=d;return f}return e};_.fe=function(a){return _.ee(document,a)};
-_.ee=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)};_.ge=function(a){for(var b;b=a.firstChild;)a.removeChild(b)};_.he=function(a){return 9==a.nodeType?a:a.ownerDocument||a.document};
-}catch(e){_._DumpException(e)}
-try{
-_.Li=function(a){var b;let c;const d=null==(c=(b=(a.ownerDocument&&a.ownerDocument.defaultView||window).document).querySelector)?void 0:c.call(b,"script[nonce]");(b=d?d.nonce||d.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",b)};_.Mi=function(a){if(!a)return null;a=_.G(a,4);var b;null===a||void 0===a?b=null:b=_.Od(a);return b};_.Ni=class extends _.O{constructor(a){super(a)}};_.Oi=function(a,b){return(b||document).getElementsByTagName(String(a))};
-}catch(e){_._DumpException(e)}
-try{
-var Qi=function(a,b,c){a<b?Pi(a+1,b):_.Bc.log(Error("ca`"+a+"`"+b),{url:c})},Pi=function(a,b){if(Ri){const c=_.fe("SCRIPT");c.async=!0;c.type="text/javascript";c.charset="UTF-8";c.src=_.Md(Ri);_.Li(c);c.onerror=_.Ad(Qi,a,b,c.src);_.Oi("HEAD")[0].appendChild(c)}},Si=class extends _.O{constructor(a){super(a)}};var Ti=_.C(_.Mc,Si,17)||new Si,Ui,Ri=(Ui=_.C(Ti,_.Ni,1))?_.Mi(Ui):null,Vi,Wi=(Vi=_.C(Ti,_.Ni,2))?_.Mi(Vi):null,Xi=function(){Pi(1,2);if(Wi){const b=_.fe("LINK");b.setAttribute("type","text/css");b.rel="stylesheet";b.href=_.Md(Wi).toString();var a=_.be(b.ownerDocument&&b.ownerDocument.defaultView);a&&b.setAttribute("nonce",a);(a=_.be())&&b.setAttribute("nonce",a);_.Oi("HEAD")[0].appendChild(b)}};(function(){const a=_.Nc();if(_.F(a,18))Xi();else{const b=_.Cd(a,19)||0;window.addEventListener("load",()=>{window.setTimeout(Xi,b)})}})();
-}catch(e){_._DumpException(e)}
-})(this.gbar_);
-// Google Inc.
-</script><script nonce="lnrOD2Pv0TWku_rA--GT2A"> window['_DRIVE_VIEWER_ctiming']['jls']=new Date().getTime(); </script><script id="base-js" async type="text/javascript" src="https://www.gstatic.com/_/apps-fileview/_/js/k=apps-fileview.v.ru.VMLyF5w5B40.O/am=ADCA/d=1/rs=AO0039sp41Kiic7qO1nSmaY5rxNJ7pGXNg/m=v,wb" nonce="lnrOD2Pv0TWku_rA--GT2A"></script></body></html>
+[
+  {
+    "id": 441945886,
+    "state": "EXECUTED",
+    "date": "2019-08-26T10:50:58.294041",
+    "operationAmount": {
+      "amount": "31957.58",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Maestro 1596837868705199",
+    "to": "Счет 64686473678894779589"
+  },
+  {
+    "id": 41428829,
+    "state": "EXECUTED",
+    "date": "2019-07-03T18:35:29.512364",
+    "operationAmount": {
+      "amount": "8221.37",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "MasterCard 7158300734726758",
+    "to": "Счет 35383033474447895560"
+  },
+  {
+    "id": 939719570,
+    "state": "EXECUTED",
+    "date": "2018-06-30T02:08:58.425572",
+    "operationAmount": {
+      "amount": "9824.07",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 75106830613657916952",
+    "to": "Счет 11776614605963066702"
+  },
+  {
+    "id": 587085106,
+    "state": "EXECUTED",
+    "date": "2018-03-23T10:45:06.972075",
+    "operationAmount": {
+      "amount": "48223.05",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 41421565395219882431"
+  },
+  {
+    "id": 142264268,
+    "state": "EXECUTED",
+    "date": "2019-04-04T23:20:05.206878",
+    "operationAmount": {
+      "amount": "79114.93",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 19708645243227258542",
+    "to": "Счет 75651667383060284188"
+  },
+  {
+    "id": 873106923,
+    "state": "EXECUTED",
+    "date": "2019-03-23T01:09:46.296404",
+    "operationAmount": {
+      "amount": "43318.34",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 44812258784861134719",
+    "to": "Счет 74489636417521191160"
+  },
+  {
+    "id": 214024827,
+    "state": "EXECUTED",
+    "date": "2018-12-20T16:43:26.929246",
+    "operationAmount": {
+      "amount": "70946.18",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 10848359769870775355",
+    "to": "Счет 21969751544412966366"
+  },
+  {
+    "id": 522357576,
+    "state": "EXECUTED",
+    "date": "2019-07-12T20:41:47.882230",
+    "operationAmount": {
+      "amount": "51463.70",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 48894435694657014368",
+    "to": "Счет 38976430693692818358"
+  },
+  {
+    "id": 895315941,
+    "state": "EXECUTED",
+    "date": "2018-08-19T04:27:37.904916",
+    "operationAmount": {
+      "amount": "56883.54",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Classic 6831982476737658",
+    "to": "Visa Platinum 8990922113665229"
+  },
+  {
+    "id": 596171168,
+    "state": "EXECUTED",
+    "date": "2018-07-11T02:26:18.671407",
+    "operationAmount": {
+      "amount": "79931.03",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 72082042523231456215"
+  },
+  {
+    "id": 716496732,
+    "state": "EXECUTED",
+    "date": "2018-04-04T17:33:34.701093",
+    "operationAmount": {
+      "amount": "40701.91",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Gold 5999414228426353",
+    "to": "Счет 72731966109147704472"
+  },
+  {
+    "id": 863064926,
+    "state": "EXECUTED",
+    "date": "2019-12-08T22:46:21.935582",
+    "operationAmount": {
+      "amount": "41096.24",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 90424923579946435907"
+  },
+  {
+    "id": 594226727,
+    "state": "CANCELED",
+    "date": "2018-09-12T21:27:25.241689",
+    "operationAmount": {
+      "amount": "67314.70",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Platinum 1246377376343588",
+    "to": "Счет 14211924144426031657"
+  },
+  {
+    "id": 615064591,
+    "state": "CANCELED",
+    "date": "2018-10-14T08:21:33.419441",
+    "operationAmount": {
+      "amount": "77751.04",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Maestro 3928549031574026",
+    "to": "Счет 84163357546688983493"
+  },
+  {
+    "id": 147815167,
+    "state": "EXECUTED",
+    "date": "2018-01-26T15:40:13.413061",
+    "operationAmount": {
+      "amount": "50870.71",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Maestro 4598300720424501",
+    "to": "Счет 43597928997568165086"
+  },
+  {
+    "id": 518707726,
+    "state": "EXECUTED",
+    "date": "2018-11-29T07:18:23.941293",
+    "operationAmount": {
+      "amount": "3348.98",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "MasterCard 3152479541115065",
+    "to": "Visa Gold 9447344650495960"
+  },
+  {
+    "id": 649467725,
+    "state": "EXECUTED",
+    "date": "2018-04-14T19:35:28.978265",
+    "operationAmount": {
+      "amount": "96995.73",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 27248529432547658655",
+    "to": "Счет 97584898735659638967"
+  },
+  {
+    "id": 782295999,
+    "state": "EXECUTED",
+    "date": "2019-09-11T17:30:34.445824",
+    "operationAmount": {
+      "amount": "54280.01",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 24763316288121894080",
+    "to": "Счет 96291777776753236930"
+  },
+  {
+    "id": 542678139,
+    "state": "EXECUTED",
+    "date": "2018-10-14T22:27:25.205631",
+    "operationAmount": {
+      "amount": "90582.51",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Platinum 2256483756542539",
+    "to": "Счет 78808375133947439319"
+  },
+  {
+    "id": 558167602,
+    "state": "EXECUTED",
+    "date": "2019-04-12T17:27:27.896421",
+    "operationAmount": {
+      "amount": "43861.89",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 73654108430135874305",
+    "to": "Счет 89685546118890842412"
+  },
+  {
+    "id": 407169720,
+    "state": "EXECUTED",
+    "date": "2018-02-03T14:52:08.093722",
+    "operationAmount": {
+      "amount": "67011.26",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "MasterCard 4047671689373225",
+    "to": "Maestro 3806652527413662"
+  },
+  {
+    "id": 361044570,
+    "state": "EXECUTED",
+    "date": "2018-03-02T02:03:11.563721",
+    "operationAmount": {
+      "amount": "7484.91",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 96008924215040031147",
+    "to": "Счет 30377212495530283001"
+  },
+  {
+    "id": 536723678,
+    "state": "EXECUTED",
+    "date": "2018-06-12T07:17:01.311610",
+    "operationAmount": {
+      "amount": "26334.08",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Classic 4195191172583802",
+    "to": "Счет 17066032701791012883"
+  },
+  {
+    "id": 172864002,
+    "state": "EXECUTED",
+    "date": "2018-12-28T23:10:35.459698",
+    "operationAmount": {
+      "amount": "49192.52",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 96231448929365202391"
+  },
+  {
+    "id": 476991061,
+    "state": "CANCELED",
+    "date": "2018-11-23T17:47:33.127140",
+    "operationAmount": {
+      "amount": "26971.25",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Gold 7305799447374042",
+    "to": "Maestro 3364923093037194"
+  },
+  {
+    "id": 633268359,
+    "state": "EXECUTED",
+    "date": "2019-07-12T08:11:47.735774",
+    "operationAmount": {
+      "amount": "2631.44",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Gold 3589276410671603",
+    "to": "Счет 96292138399386853355"
+  },
+  {
+    "id": 988276204,
+    "state": "EXECUTED",
+    "date": "2018-02-22T00:40:19.984219",
+    "operationAmount": {
+      "amount": "71771.90",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "MasterCard 4956649687637418",
+    "to": "Счет 90562872508279542248"
+  },
+  {
+    "id": 888407131,
+    "state": "EXECUTED",
+    "date": "2019-09-29T14:25:28.588059",
+    "operationAmount": {
+      "amount": "45849.53",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 35421428450077339637",
+    "to": "Счет 46723050671868944961"
+  },
+  {
+    "id": 634356296,
+    "state": "EXECUTED",
+    "date": "2018-01-21T01:10:28.317704",
+    "operationAmount": {
+      "amount": "96900.90",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 33407225454123927865",
+    "to": "Счет 79619011266276091215"
+  },
+  {
+    "id": 34148726,
+    "state": "EXECUTED",
+    "date": "2018-11-23T23:52:36.999661",
+    "operationAmount": {
+      "amount": "79428.73",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Platinum 5355133159258236",
+    "to": "Maestro 8045769817179061"
+  },
+  {
+    "id": 970724427,
+    "state": "CANCELED",
+    "date": "2019-01-15T17:58:27.064377",
+    "operationAmount": {
+      "amount": "90688.44",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Platinum 2241653116508487",
+    "to": "Счет 26494285169417058486"
+  },
+  {
+    "id": 104807525,
+    "state": "EXECUTED",
+    "date": "2019-06-01T06:46:16.803326",
+    "operationAmount": {
+      "amount": "60888.63",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "МИР 8201420097886664",
+    "to": "Счет 35116633516390079956"
+  },
+  {
+    "id": 550607912,
+    "state": "EXECUTED",
+    "date": "2018-07-31T12:25:32.579413",
+    "operationAmount": {
+      "amount": "34380.08",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "MasterCard 8532498887072395",
+    "to": "Счет 44238164562083919420"
+  },
+  {
+    "id": 608117766,
+    "state": "CANCELED",
+    "date": "2018-10-08T09:05:05.282282",
+    "operationAmount": {
+      "amount": "77302.31",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Gold 6527183396477720",
+    "to": "Счет 38573816654581789611"
+  },
+  {
+    "id": 484201274,
+    "state": "EXECUTED",
+    "date": "2019-04-11T23:10:21.514616",
+    "operationAmount": {
+      "amount": "62621.51",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "МИР 8193813157568899",
+    "to": "МИР 9425591958944146"
+  },
+  {
+    "id": 547682597,
+    "state": "EXECUTED",
+    "date": "2018-12-29T21:45:18.495053",
+    "operationAmount": {
+      "amount": "66263.93",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 77977573135347241529",
+    "to": "Счет 33062909508148771891"
+  },
+  {
+    "id": 811920303,
+    "state": "EXECUTED",
+    "date": "2019-06-14T19:37:49.044089",
+    "operationAmount": {
+      "amount": "63150.74",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 73222753239048295679",
+    "to": "Счет 78544755774551298747"
+  },
+  {
+    "id": 509645757,
+    "state": "EXECUTED",
+    "date": "2019-10-30T01:49:52.939296",
+    "operationAmount": {
+      "amount": "23036.03",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Gold 7756673469642839",
+    "to": "Счет 48943806953649539453"
+  },
+  {
+    "id": 801684332,
+    "state": "EXECUTED",
+    "date": "2019-11-05T12:04:13.781725",
+    "operationAmount": {
+      "amount": "21344.35",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 77613226829885488381"
+  },
+  {
+    "id": 122284694,
+    "state": "EXECUTED",
+    "date": "2019-08-08T21:58:06.688541",
+    "operationAmount": {
+      "amount": "98657.83",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 99668626339273709694",
+    "to": "Счет 27219929444683698245"
+  },
+  {
+    "id": 154927927,
+    "state": "EXECUTED",
+    "date": "2019-11-19T09:22:25.899614",
+    "operationAmount": {
+      "amount": "30153.72",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Maestro 7810846596785568",
+    "to": "Счет 43241152692663622869"
+  },
+  {
+    "id": 743628025,
+    "state": "EXECUTED",
+    "date": "2018-06-04T06:59:55.424356",
+    "operationAmount": {
+      "amount": "978.31",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 54883981902864782073",
+    "to": "Счет 61834060137088759145"
+  },
+  {
+    "id": 743278119,
+    "state": "EXECUTED",
+    "date": "2018-10-15T08:05:34.061711",
+    "operationAmount": {
+      "amount": "51203.12",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "MasterCard 1435442169918409",
+    "to": "Maestro 7452400219469235"
+  },
+  {
+    "id": 871921546,
+    "state": "EXECUTED",
+    "date": "2019-02-14T03:09:23.006652",
+    "operationAmount": {
+      "amount": "47022.09",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Classic 6216537926639975",
+    "to": "Счет 67667879435628279708"
+  },
+  {
+    "id": 373912477,
+    "state": "EXECUTED",
+    "date": "2018-03-09T02:11:01.339352",
+    "operationAmount": {
+      "amount": "33249.01",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Classic 7022985698476865",
+    "to": "Счет 60979028617970883410"
+  },
+  {
+    "id": 720751477,
+    "state": "EXECUTED",
+    "date": "2018-11-08T08:21:45.902633",
+    "operationAmount": {
+      "amount": "16872.46",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 75743795418434298755",
+    "to": "Счет 80785963509390811744"
+  },
+  {
+    "id": 949194534,
+    "state": "EXECUTED",
+    "date": "2019-08-15T01:48:10.042554",
+    "operationAmount": {
+      "amount": "31222.43",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 65298957349197687907",
+    "to": "Счет 38784565940893479418"
+  },
+  {
+    "id": 260972664,
+    "state": "EXECUTED",
+    "date": "2018-01-23T01:48:30.477053",
+    "operationAmount": {
+      "amount": "2974.30",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Classic 3414396880443483",
+    "to": "Visa Gold 2684274847577419"
+  },
+  {
+    "id": 317987878,
+    "state": "EXECUTED",
+    "date": "2018-01-13T13:00:58.458625",
+    "operationAmount": {
+      "amount": "55985.82",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Classic 8906171742833215",
+    "to": "Visa Platinum 6086997013848217"
+  },
+  {
+    "id": 72122709,
+    "state": "EXECUTED",
+    "date": "2018-12-18T17:07:09.800800",
+    "operationAmount": {
+      "amount": "19683.25",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 86675623828180311969",
+    "to": "Счет 15351391408911677994"
+  },
+  {
+    "id": 242885401,
+    "state": "EXECUTED",
+    "date": "2019-07-08T00:08:32.986663",
+    "operationAmount": {
+      "amount": "10083.68",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 38427597486442637521",
+    "to": "Счет 83889757415570699323"
+  },
+  {
+    "id": 286706711,
+    "state": "EXECUTED",
+    "date": "2018-02-06T06:42:02.219233",
+    "operationAmount": {
+      "amount": "621.37",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "MasterCard 9175985085449563",
+    "to": "Счет 82781399328834147668"
+  },
+  {
+    "id": 108066781,
+    "state": "EXECUTED",
+    "date": "2019-06-21T12:34:06.351022",
+    "operationAmount": {
+      "amount": "25762.92",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 90817634362091276762"
+  },
+  {
+    "id": 100392079,
+    "state": "EXECUTED",
+    "date": "2019-03-03T03:13:18.622393",
+    "operationAmount": {
+      "amount": "44493.45",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Classic 6319351940209800",
+    "to": "Счет 14073196441261107791"
+  },
+  {
+    "id": 51314762,
+    "state": "EXECUTED",
+    "date": "2018-08-25T02:58:18.764678",
+    "operationAmount": {
+      "amount": "52245.30",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Classic 4040551273087672",
+    "to": "Visa Platinum 7825450883088021"
+  },
+  {
+    "id": 464419177,
+    "state": "CANCELED",
+    "date": "2018-07-15T18:44:13.346362",
+    "operationAmount": {
+      "amount": "71024.64",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Gold 9657499677062945",
+    "to": "Счет 19213886662094884261"
+  },
+  {
+    "id": 560813069,
+    "state": "CANCELED",
+    "date": "2019-12-03T04:27:03.427014",
+    "operationAmount": {
+      "amount": "17628.50",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "MasterCard 1796816785869527",
+    "to": "Visa Classic 7699855375169288"
+  },
+  {
+    "id": 894961746,
+    "state": "EXECUTED",
+    "date": "2019-08-04T20:17:25.443322",
+    "operationAmount": {
+      "amount": "2523.44",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 33721541831646393763",
+    "to": "Счет 68774571780974952778"
+  },
+  {
+    "id": 360577236,
+    "state": "EXECUTED",
+    "date": "2019-09-07T07:20:13.889610",
+    "operationAmount": {
+      "amount": "18536.73",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Maestro 4284341727554246",
+    "to": "МИР 1582474475547301"
+  },
+  {
+    "id": 285353808,
+    "state": "EXECUTED",
+    "date": "2018-08-06T16:22:54.643491",
+    "operationAmount": {
+      "amount": "82946.19",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 12189246980267075758"
+  },
+  {
+    "id": 416017997,
+    "state": "EXECUTED",
+    "date": "2019-05-07T01:32:37.142797",
+    "operationAmount": {
+      "amount": "29033.65",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "МИР 4878656375033856",
+    "to": "Maestro 6890749237669619"
+  },
+  {
+    "id": 556488059,
+    "state": "CANCELED",
+    "date": "2019-05-17T01:50:00.166954",
+    "operationAmount": {
+      "amount": "74604.56",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "МИР 8021883699486544",
+    "to": "Visa Gold 8702717057933248"
+  },
+  {
+    "id": 74897425,
+    "state": "EXECUTED",
+    "date": "2019-02-08T09:09:35.038506",
+    "operationAmount": {
+      "amount": "62654.30",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 28429442875257789335",
+    "to": "Счет 95473010446151855633"
+  },
+  {
+    "id": 636137913,
+    "state": "EXECUTED",
+    "date": "2019-06-16T22:17:01.825020",
+    "operationAmount": {
+      "amount": "24260.78",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Platinum 8990850370884895",
+    "to": "Счет 15574304810835774010"
+  },
+  {
+    "id": 813238385,
+    "state": "EXECUTED",
+    "date": "2018-05-04T03:29:30.253483",
+    "operationAmount": {
+      "amount": "22007.02",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "MasterCard 3595832182277400",
+    "to": "Счет 79697233246085035210"
+  },
+  {
+    "id": 854048120,
+    "state": "EXECUTED",
+    "date": "2019-03-29T10:57:20.635567",
+    "operationAmount": {
+      "amount": "30234.99",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Classic 1203921041964079",
+    "to": "Счет 34616199494072692721"
+  },
+  {
+    "id": 269462132,
+    "state": "EXECUTED",
+    "date": "2018-08-14T05:42:30.104666",
+    "operationAmount": {
+      "amount": "19010.50",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 18125798580985711166",
+    "to": "Счет 98841213648056852372"
+  },
+  {
+    "id": 692008409,
+    "state": "CANCELED",
+    "date": "2019-02-14T17:38:09.910336",
+    "operationAmount": {
+      "amount": "37044.95",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Classic 4610247282706784",
+    "to": "Счет 63229171188548882700"
+  },
+  {
+    "id": 431131847,
+    "state": "EXECUTED",
+    "date": "2018-05-05T01:38:56.538074",
+    "operationAmount": {
+      "amount": "56071.02",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "MasterCard 9454780748494532",
+    "to": "Счет 51958934737718181351"
+  },
+  {
+    "id": 15948212,
+    "state": "EXECUTED",
+    "date": "2018-12-23T11:47:52.403285",
+    "operationAmount": {
+      "amount": "47408.20",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "МИР 8665240839126074",
+    "to": "Maestro 3000704277834087"
+  },
+  {
+    "id": 114832369,
+    "state": "EXECUTED",
+    "date": "2019-12-07T06:17:14.634890",
+    "operationAmount": {
+      "amount": "48150.39",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Classic 2842878893689012",
+    "to": "Счет 35158586384610753655"
+  },
+  {
+    "id": 176798279,
+    "state": "CANCELED",
+    "date": "2019-04-18T11:22:18.800453",
+    "operationAmount": {
+      "amount": "73778.48",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 90417871337969064865"
+  },
+  {
+    "id": 482520625,
+    "state": "EXECUTED",
+    "date": "2019-11-13T17:38:04.800051",
+    "operationAmount": {
+      "amount": "62814.53",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 38611439522855669794",
+    "to": "Счет 46765464282437878125"
+  },
+  {
+    "id": 414894334,
+    "state": "EXECUTED",
+    "date": "2019-06-30T15:11:53.136004",
+    "operationAmount": {
+      "amount": "95860.47",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 59956820797131895975",
+    "to": "Счет 43475624104328495820"
+  },
+  {},
+  {
+    "id": 509552992,
+    "state": "EXECUTED",
+    "date": "2019-04-19T12:02:30.129240",
+    "operationAmount": {
+      "amount": "81513.74",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Maestro 9171987821259925",
+    "to": "МИР 2052809263194182"
+  },
+  {
+    "id": 596914981,
+    "state": "EXECUTED",
+    "date": "2018-04-16T17:34:19.241289",
+    "operationAmount": {
+      "amount": "65169.27",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Platinum 1813166339376336",
+    "to": "Счет 97848259954268659635"
+  },
+  {
+    "id": 200634844,
+    "state": "CANCELED",
+    "date": "2018-02-13T04:43:11.374324",
+    "operationAmount": {
+      "amount": "42210.20",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 33355011456314142963",
+    "to": "Счет 45735917297559088682"
+  },
+  {
+    "id": 879660146,
+    "state": "EXECUTED",
+    "date": "2018-07-22T07:42:32.953324",
+    "operationAmount": {
+      "amount": "92130.50",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 19628854383215954147",
+    "to": "Счет 90887717138446397473"
+  },
+  {
+    "id": 893507143,
+    "state": "EXECUTED",
+    "date": "2018-02-03T07:16:28.366141",
+    "operationAmount": {
+      "amount": "90297.21",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 37653295304860108767"
+  },
+  {
+    "id": 710136990,
+    "state": "CANCELED",
+    "date": "2018-08-17T03:57:28.607101",
+    "operationAmount": {
+      "amount": "66906.45",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Maestro 1913883747791351",
+    "to": "Счет 11492155674319392427"
+  },
+  {
+    "id": 390558607,
+    "state": "EXECUTED",
+    "date": "2019-02-12T00:08:07.524972",
+    "operationAmount": {
+      "amount": "16796.95",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 72645194281643232984",
+    "to": "Счет 95782287258966264115"
+  },
+  {
+    "id": 902831954,
+    "state": "EXECUTED",
+    "date": "2018-04-22T17:01:46.885252",
+    "operationAmount": {
+      "amount": "84732.61",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Platinum 3530191547567121",
+    "to": "Счет 46878338893256147528"
+  },
+  {
+    "id": 86608620,
+    "state": "EXECUTED",
+    "date": "2019-08-16T04:23:41.621065",
+    "operationAmount": {
+      "amount": "6004.00",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "MasterCard 8826230888662405",
+    "to": "Счет 96119739109420349721"
+  },
+  {
+    "id": 232222017,
+    "state": "EXECUTED",
+    "date": "2018-07-06T22:32:10.495465",
+    "operationAmount": {
+      "amount": "37160.27",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Classic 4062745111784804",
+    "to": "Maestro 8602249654751155"
+  },
+  {
+    "id": 280743947,
+    "state": "EXECUTED",
+    "date": "2018-09-27T14:26:24.629306",
+    "operationAmount": {
+      "amount": "45653.70",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 23177857685058835559",
+    "to": "Счет 56363465303962313778"
+  },
+  {
+    "id": 185048835,
+    "state": "EXECUTED",
+    "date": "2019-05-06T00:17:42.736209",
+    "operationAmount": {
+      "amount": "74895.83",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 27921306202254867520",
+    "to": "Счет 49884962711830774470"
+  },
+  {
+    "id": 422035015,
+    "state": "EXECUTED",
+    "date": "2019-02-27T03:59:25.921176",
+    "operationAmount": {
+      "amount": "69311.35",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "MasterCard 8847384717023026",
+    "to": "Счет 85458008326755993377"
+  },
+  {
+    "id": 917824439,
+    "state": "EXECUTED",
+    "date": "2019-07-18T12:27:13.355343",
+    "operationAmount": {
+      "amount": "82139.20",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Platinum 6942697754917688",
+    "to": "МИР 2956603572573342"
+  },
+  {
+    "id": 121646999,
+    "state": "CANCELED",
+    "date": "2018-06-08T16:14:59.936274",
+    "operationAmount": {
+      "amount": "91121.62",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Maestro 7552745726849311",
+    "to": "Счет 34799481846914116850"
+  },
+  {
+    "id": 816266176,
+    "state": "CANCELED",
+    "date": "2018-06-24T00:46:32.422648",
+    "operationAmount": {
+      "amount": "60030.73",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "МИР 6381702861749111",
+    "to": "Счет 27804394774631586026"
+  },
+  {
+    "id": 736942989,
+    "state": "EXECUTED",
+    "date": "2019-09-06T00:48:01.081967",
+    "operationAmount": {
+      "amount": "6357.56",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Gold 3654412434951162",
+    "to": "Счет 59986621134048778289"
+  },
+  {
+    "id": 580054042,
+    "state": "EXECUTED",
+    "date": "2018-06-20T03:59:34.851630",
+    "operationAmount": {
+      "amount": "96350.51",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "МИР 3766446452238784",
+    "to": "Счет 86655182730188443980"
+  },
+  {
+    "id": 619287771,
+    "state": "EXECUTED",
+    "date": "2019-08-19T16:30:41.967497",
+    "operationAmount": {
+      "amount": "81150.87",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 17691325653939384901",
+    "to": "Счет 49304996510329747621"
+  },
+  {
+    "id": 490100847,
+    "state": "EXECUTED",
+    "date": "2018-12-22T02:02:49.564873",
+    "operationAmount": {
+      "amount": "56516.63",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Gold 8326537236216459",
+    "to": "MasterCard 6783917276771847"
+  },
+  {
+    "id": 179194306,
+    "state": "EXECUTED",
+    "date": "2019-05-19T12:51:49.023880",
+    "operationAmount": {
+      "amount": "6381.58",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "МИР 5211277418228469",
+    "to": "Счет 58518872592028002662"
+  },
+  {
+    "id": 27192367,
+    "state": "CANCELED",
+    "date": "2018-12-24T20:16:18.819037",
+    "operationAmount": {
+      "amount": "991.49",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 71687416928274675290",
+    "to": "Счет 87448526688763159781"
+  },
+  {
+    "id": 921286598,
+    "state": "EXECUTED",
+    "date": "2018-03-09T23:57:37.537412",
+    "operationAmount": {
+      "amount": "25780.71",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 26406253703545413262",
+    "to": "Счет 20735820461482021315"
+  },
+  {
+    "id": 207126257,
+    "state": "EXECUTED",
+    "date": "2019-07-15T11:47:40.496961",
+    "operationAmount": {
+      "amount": "92688.46",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 35737585785074382265"
+  },
+  {
+    "id": 957763565,
+    "state": "EXECUTED",
+    "date": "2019-01-05T00:52:30.108534",
+    "operationAmount": {
+      "amount": "87941.37",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 46363668439560358409",
+    "to": "Счет 18889008294666828266"
+  },
+  {
+    "id": 667307132,
+    "state": "EXECUTED",
+    "date": "2019-07-13T18:51:29.313309",
+    "operationAmount": {
+      "amount": "97853.86",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Maestro 1308795367077170",
+    "to": "Счет 96527012349577388612"
+  }
+]

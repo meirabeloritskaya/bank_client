@@ -13,5 +13,5 @@ def get_data_transactions(path):
         return []
     return data_transactions
 
-
-# path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
+if __name__ == "__main__":
+ path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
