@@ -1,7 +1,6 @@
 import requests
-import json
 import os
-from utils import get_data_transactions
+from src.utils import get_data_transactions
 
 from dotenv import load_dotenv
 
@@ -30,5 +29,7 @@ def amount_transaction(transaction_by_id):
             print(e)
 
 
-for transaction in get_data_transactions(path):
-    print(amount_transaction(transaction))
+if __name__ == "__main__":
+    list_trans = get_data_transactions(path)
+    print(amount_transaction(list_trans[0]))
+    print(amount_transaction(list_trans[1]))

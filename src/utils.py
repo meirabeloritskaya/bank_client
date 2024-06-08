@@ -13,6 +13,7 @@ def get_data_transactions(path):
         return []
     return data_transactions
 
+
 if __name__ == "__main__":
- path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
- print(get_data_transactions(path))
+    path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
+    print(get_data_transactions(path))

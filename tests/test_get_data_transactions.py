@@ -1,5 +1,7 @@
 from unittest.mock import patch, mock_open
 from src.utils import get_data_transactions
+
+
 def test_successful_read():
     """проверяем, что файл json корректно читается"""
     mock_data = (
