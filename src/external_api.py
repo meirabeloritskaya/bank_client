@@ -28,8 +28,3 @@ def amount_transaction(transaction_by_id):
         except Exception as e:
             print(e)
 
-
-if __name__ == "__main__":
-    list_trans = get_data_transactions(path)
-    print(amount_transaction(list_trans[0]))
-    print(amount_transaction(list_trans[1]))
