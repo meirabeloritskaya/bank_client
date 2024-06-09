@@ -1,6 +1,6 @@
 import requests
 import os
-from src.utils import get_data_transactions
+
 
 from dotenv import load_dotenv
 
