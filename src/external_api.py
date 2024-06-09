@@ -27,4 +27,3 @@ def amount_transaction(transaction_by_id):
             return my_result["result"]
         except Exception as e:
             print(e)
-
