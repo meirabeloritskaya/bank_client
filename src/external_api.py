@@ -1,6 +1,6 @@
 import requests
 import os
-from src.utils import get_data_transactions
+
 
 from dotenv import load_dotenv
 
@@ -27,4 +27,3 @@ def amount_transaction(transaction_by_id):
             return my_result["result"]
         except Exception as e:
             print(e)
-
