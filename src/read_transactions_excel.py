@@ -1,3 +1,4 @@
+import json
 import logging
 import csv
 import pandas as pd
@@ -22,20 +23,18 @@ def get_data_transactions(path):
         try:
             logger.info("Получение информации о транзакциях")
             df = pd.read_excel(path)
-            # print(df.shape)
-            # print(df.head(n))
-
+            dict_df = df.to_dict(orient="records")
+            return json.dumps(dict_df, indent=4)
         except pd.errors.ParserError as e:
             logger.error(f"Ошибка при парсинге Excel файла: {e}")
-            return pd.DataFrame()
+            return json.dumps({})
     except FileNotFoundError:
         logger.error("путь к файлу transactions_excel.xlsx не найден")
-        return pd.DataFrame()
-    return df
+        return json.dumps({})
 
 
 if __name__ == "__main__":
     path = "C:/Users/Meira/PycharmProjects/card_client/data/transactions_excel.xlsx"
-    list_trans = get_data_transactions(path)
+    list_trans_json = get_data_transactions(path)
 
-    print(list_trans)
+    print(list_trans_json)
