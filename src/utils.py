@@ -34,4 +34,6 @@ def get_data_transactions(path):
 if __name__ == "__main__":
     path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
     list_trans = get_data_transactions(path)
-    print(list_trans[:3])
+    n = int(input("введите количество транзакций: "))
+    for i in range(n):
+        print(list_trans[i])
