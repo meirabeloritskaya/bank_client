@@ -32,7 +32,7 @@ def get_data_transactions(path):
                 return []
     except FileNotFoundError:
         logger.error("путь к файлу transactions.csv не найден")
-        return []
+        return  pd.DataFrame()
     return reader
 
 
