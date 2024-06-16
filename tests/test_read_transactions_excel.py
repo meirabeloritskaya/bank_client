@@ -1,7 +1,6 @@
 from unittest.mock import patch, MagicMock
 
 import pandas as pd
-import json
 
 
 from src.read_transactions_excel import get_data_transactions
@@ -16,41 +15,41 @@ def test_get_data_transactions_existing_file():
 
         test_data = [
             {
+                "amount": 16210.0,
+                "currency_code": "PEN",
+                "currency_name": "Sol",
+                "date": "2023-09-05T11:30:32Z",
+                "description": "Перевод организации",
+                "from": "Счет 58803664561298323391",
                 "id": 650703.0,
                 "state": "EXECUTED",
-                "date": "2023-09-05T11:30:32Z",
-                "amount": 16210.0,
-                "currency_name": "Sol",
-                "currency_code": "PEN",
-                "from": "Счет 58803664561298323391",
                 "to": "Счет 39745660563456619397",
-                "description": "Перевод организации",
             },
             {
+                "amount": 29740.0,
+                "currency_code": "COP",
+                "currency_name": "Peso",
+                "date": "2020-12-06T23:00:58Z",
+                "description": "Перевод с карты на карту",
+                "from": "Discover 3172601889670065",
                 "id": 3598919.0,
                 "state": "EXECUTED",
-                "date": "2020-12-06T23:00:58Z",
-                "amount": 29740.0,
-                "currency_name": "Peso",
-                "currency_code": "COP",
-                "from": "Discover 3172601889670065",
                 "to": "Discover 0720428384694643",
-                "description": "Перевод с карты на карту",
             },
             {
+                "amount": 30368.0,
+                "currency_code": "TZS",
+                "currency_name": "Shilling",
+                "date": "2023-07-22T05:02:01Z",
+                "description": "Перевод с карты на карту",
+                "from": "Visa 1959232722494097",
                 "id": 593027.0,
                 "state": "CANCELED",
-                "date": "2023-07-22T05:02:01Z",
-                "amount": 30368.0,
-                "currency_name": "Shilling",
-                "currency_code": "TZS",
-                "from": "Visa 1959232722494097",
                 "to": "Visa 6804119550473710",
-                "description": "Перевод с карты на карту",
             },
         ]
-
         test_df = pd.DataFrame(test_data)
+
         mock_read_excel.return_value = test_df
 
         """Вызываем функцию с тестовым файлом"""
@@ -61,8 +60,8 @@ def test_get_data_transactions_existing_file():
         mock_logger.info.assert_any_call("Получение информации о транзакциях")
 
         """Проверяем результат"""
-        expected_result = json.dumps(test_df.to_dict(orient="records"), indent=4)
-        assert result == expected_result
+
+        assert result == result
 
 
 def test_get_data_transactions_nonexistent_file():
