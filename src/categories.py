@@ -24,7 +24,7 @@ def list_categories(transactions):
     )
 
 
-def categories_by_descriptions(transactions, my_list_categories):
+def categories_by_descriptions(my_list_categories):
 
     counted = Counter(my_list_categories)
     return counted

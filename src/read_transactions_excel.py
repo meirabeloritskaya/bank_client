@@ -32,6 +32,8 @@ def get_data_transactions(path):
 
 if __name__ == "__main__":
     path = "C:/Users/Meira/PycharmProjects/card_client/data/transactions_excel.xlsx"
-    list_trans_json = get_data_transactions(path)
+    list_trans = get_data_transactions(path)
 
-    print(list_trans_json)
+    # for trans in list_trans:
+    #  print(trans)
+    print(list_trans)
