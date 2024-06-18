@@ -7,7 +7,10 @@ from read_transactions_excel import get_data_transactions as set_excel
 from currency_cod import currency_cod_transaction
 from widget import decoder_date
 from descriptions import description_transaction
-
+from masks import card_client
+from masks import account_client
+from widget import filter_digital_data
+from widget import filter_alpha_data
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler(
@@ -197,7 +200,7 @@ def filter_by_currency_cod(transactions):
 
             if is_cod_rub == "Да":
                 logger.info("выбраны рублевые транзакции")
-                transactions_rub = currency_cod_transaction(transactions, 'RUB')
+                transactions_rub = currency_cod_transaction(transactions, "RUB")
                 return transactions_rub
             elif is_cod_rub == "Нет":
                 logger.info("выбраны все транзакции")
@@ -219,7 +222,11 @@ def filter_by_word(transactions):
     while True:
         try:
             is_word_description = (
-                input("Отфильтровать список транзакций по определенному слову? Да/Нет: ").strip().title()
+                input(
+                    "Отфильтровать список транзакций по определенному слову? Да/Нет: "
+                )
+                .strip()
+                .title()
             )
 
             if is_word_description == "Да":
@@ -227,11 +234,15 @@ def filter_by_word(transactions):
                 word_description = input(
                     "введите слово или фразу, которые должно находиться в описании транзакции: "
                 )
-                list_filter_by_word = description_transaction(transactions, word_description)
+                list_filter_by_word = description_transaction(
+                    transactions, word_description
+                )
+                # print('Распечатываю итоговый список транзакций...')
                 return list_filter_by_word
 
             elif is_word_description == "Нет":
                 logger.info("слово в описании не выбрано")
+                print("Распечатываю итоговый список транзакций...")
                 return transactions
 
             else:
@@ -242,6 +253,69 @@ def filter_by_word(transactions):
             print(f"Что-то пошло не так: {e}")
             logger.error(f"Ошибка при фильтрации: {e}")
             print(is_word_description)
+
+
+def mask_list_by_from_to(transactions):
+    masked_transactions = []
+    for transaction in transactions:
+        masked_transaction = transaction.copy()
+        if "from" in transaction and isinstance(transaction["from"], str):
+            if "счет" in transaction["from"].lower():
+                number_account = filter_digital_data(transaction["from"])
+                name_account = filter_alpha_data(transaction["from"])
+                digital_mask_account = account_client(number_account)
+                masked_transaction["from"] = f"{name_account} {digital_mask_account}"
+            else:
+                number_card = filter_digital_data(transaction["from"])
+                name_card = filter_alpha_data(transaction["from"])
+                digital_mask_card = card_client(number_card)
+                masked_transaction["from"] = f"{name_card} {digital_mask_card}"
+
+        if "to" in transaction and isinstance(transaction["to"], str):
+            if "счет" in transaction["to"].lower():
+                number_account = filter_digital_data(transaction["to"])
+                name_account = filter_alpha_data(transaction["to"])
+                digital_mask_account = account_client(number_account)
+                masked_transaction["to"] = f"{name_account} {digital_mask_account}"
+            else:
+                number_card = filter_digital_data(transaction["to"])
+                name_card = filter_alpha_data(transaction["to"])
+                digital_mask_card = card_client(number_card)
+                masked_transaction["to"] = f"{name_card} {digital_mask_card}"
+
+        masked_transactions.append(masked_transaction)
+    return masked_transactions
+
+
+def len_transactions(transactions):
+    num_transactions = len(transactions)
+    return f"Всего банковских операций: {num_transactions}"
+
+
+def print_transaction(transactions):
+    """вывод транзакций в нужном виде"""
+    logger.info("ввывод транзакций в нужном виде")
+    print("-" * 30)
+    for transaction in transactions:
+        print(f"{transaction['date']}  {transaction['description']}")
+        try:
+            print(f"{transaction['from']} -> {transaction['to']}")
+            if transaction["from"] == None:
+                print(f"-> {transaction['to']}")
+        except Exception as e:
+            print(e)
+        try:
+            if "operationAmount" in transaction:
+                print(
+                    f"Сумма: {transaction['amount']} {transaction["operationAmount"]["currency"]["code"]}"
+                )
+            elif "currency_code" in transaction:
+                print(f"Сумма: {transaction['amount']} {transaction["currency_code"]}")
+            else:
+                logger.warning(f"Транзакция без нужных ключей: {transaction}")
+        except Exception as e:
+            logger.error(f"Неожиданная ошибка: {e} в транзакции: {transaction}")
+        print("-" * 30)
 
 
 if __name__ == "__main__":
@@ -261,6 +335,10 @@ if __name__ == "__main__":
     my_sorted_list_transactions = sorted_by_date(my_list_norm_format_date)
     # print(*my_sorted_list_transactions, sep="\n")
     my_list_filter_by_currency_cod = filter_by_currency_cod(my_sorted_list_transactions)
-    print(*my_list_filter_by_currency_cod, sep='\n')
+    # print(*my_list_filter_by_currency_cod, sep='\n')
     my_list_filter_by_word = filter_by_word(my_list_filter_by_currency_cod)
-    print(*my_list_filter_by_word, sep='\n')
+    # print(*my_list_filter_by_word, sep='\n')
+    my_mask_list = mask_list_by_from_to(my_list_filter_by_word)
+    # print(*my_mask_list, sep='\n')
+    print(len_transactions(my_mask_list))
+    print_transaction(my_mask_list)
