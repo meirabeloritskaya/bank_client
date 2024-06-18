@@ -1,7 +1,7 @@
 import logging
 
 from utils import get_data_transactions as set_json
-
+from processing import select_state_id, sort_id_date
 from read_transactions_csv import get_data_transactions as set_csv
 from read_transactions_excel import get_data_transactions as set_excel
 
@@ -74,11 +74,11 @@ def set_by_state(transactions):
     for state in set_states:
         if type(state) == str:
             my_list_state.append(state)
-
+    print(f"Доступные для фильтрации статусы: {', '.join(my_list_state)}")
     return my_list_state
 
 
-def filtration_transaction_by_state(list_states):
+def choose_state(list_states):
     while True:
         try:
             state = input(
@@ -86,12 +86,13 @@ def filtration_transaction_by_state(list_states):
             )
             if state in list_states:
                 state_upper = state.upper()
+                print(f"Операции отфильтрованы по статусу {state}")
                 return state_upper
             else:
-                print("Вы ввели неверный формат статуса. Попробуйте снова!")
+                print(f"статус операции {state} недоступен.")
                 print(state)
         except ValueError:
-            print("Вы ввели неверный формат статуса. Попробуйте снова!")
+            print(f"статус операции {state} недоступен.")
             print(state)
 
 
@@ -99,7 +100,7 @@ if __name__ == "__main__":
     my_format_file = format_file()
     my_list_trans = read_file_by_format(my_format_file)
     my_list_states = set_by_state(my_list_trans)
+    my_state = choose_state(my_list_states)
 
-    print(f"Доступные для фильтрации статусы: {', '.join(my_list_states)}")
-
-    filtration_transaction_by_state(my_list_states)
+    my_filter_by_state = select_state_id(my_list_trans, my_state)
+    print(*my_filter_by_state, sep="\n")
