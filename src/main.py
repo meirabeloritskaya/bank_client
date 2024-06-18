@@ -183,7 +183,33 @@ def sorted_by_date(transactions):
             print(sort_date)
 
 
-def finish_list_transaction(sort_reverse, currency_cod, filter_by_word):
+# def filter_by_currency_cod(transactions):
+#     """выбор валюты транзакций для фильтрации"""
+#     logger.info("выбор валюты транзакций для фильтрации")
+#     while True:
+#         try:
+#             currency_cod = (
+#                 input("Выводить только рублевые транзакции? Да/Нет: ").strip().title()
+#             )
+#
+#             if currency_cod == "Да":
+#                 logger.info("выбраны рублевые транзакции")
+#
+#             elif currency_cod == "Нет":
+#                 logger.info("выбраны все транзакции")
+#                 return transactions
+#
+#             else:
+#                 logger.info("Введен некоректный ответ.")
+#                 print("Вы ввели некоректный ответ. Попробуйте снова.")
+#                 print(currency_cod)
+#         except Exception as e:
+#             print(f"Что-то пошло не так: {e}")
+#             logger.error(f"Ошибка при сортировке по дате: {e}")
+#             print(currency_cod)
+
+
+def filter_by_word(word_description):
     pass
 
 
