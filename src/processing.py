@@ -1,5 +1,4 @@
 from datetime import datetime
-from utils import get_data_transactions
 
 
 def select_state_id(list_trans: list, state: str) -> list:
@@ -20,8 +19,7 @@ def sort_id_date(list_id: list, reverse=True) -> list:
 
 
 if __name__ == "__main__":
-    # path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
-    # list_trans = get_data_transactions(path)
+
     list_state_id = [
         {"id": 1, "state": "EXECUTED", "date": "2021-07-03"},
         {"id": 2, "state": "CANCELED", "date": "2014-07-03"},

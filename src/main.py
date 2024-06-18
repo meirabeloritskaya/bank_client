@@ -8,7 +8,7 @@ from widget import decoder_date
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler(
-    "C:/Users/Meira/PycharmProjects/card_client/logs/descriptions.log", encoding="utf-8"
+    "C:/Users/Meira/PycharmProjects/card_client/logs/main.log", encoding="utf-8"
 )
 file_formatter = logging.Formatter(
     "%(asctime)s - %(name)s - %(levelname)s: %(message)s"
@@ -36,22 +36,28 @@ dict_response_program = {
 
 
 def format_file():
+    """выбор формата файла  из JSON, CSV, XLSX"""
     while True:
         try:
             format_file = int(input())
             if format_file in range(1, 4):
+                logger.info("выбран один из предложенных форматов")
                 response_program = dict_response_program[format_file]
                 print(response_program)
                 return format_file
             else:
+                logger.error("выбран неверный формат файла")
                 print("Вы ввели неверный формат файла. Попробуйте снова!")
                 print(choose_file)
-        except ValueError:
-            print("Вы ввели неверный формат файла. Попробуйте снова!")
+        except Exception as e:
+            logger.error(f"ошибка при выборе формаьа файла {e}")
+            print("Что-то пошло не так! Попробуйте снова!")
             print(choose_file)
 
 
 def read_file_by_format(format_file):
+    """чтение выбраного формата файла"""
+    logger.info("чтение выбраного формата файла")
     if format_file == 1:
         path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
         list_trans_json = set_json(path)
@@ -67,45 +73,56 @@ def read_file_by_format(format_file):
 
 
 def set_by_state(transactions):
+    """вывод списка статусов транзакций"""
+    logger.info("вывод списка статусов транзакций")
     set_states = set(
         transaction["state"] for transaction in transactions if "state" in transaction
     )
     my_list_state = []
     for state in set_states:
-        if type(state) == str:
+        if type(state) is str:
             my_list_state.append(state)
     print(f"Доступные для фильтрации статусы: {', '.join(my_list_state)}")
     return my_list_state
 
 
 def choose_state(list_states):
+    """выбор статуса транзакций для фильтрации"""
+    logger.info("выбор статуса транзакций для фильтрации")
     while True:
         try:
             state = input(
                 "Введите статус, по которому необходимо выполнить фильтрацию: "
-            )
-            state_upper = state.upper()
+            ).upper()
 
-            if state_upper in list_states:
-
-                print(f"Операции отфильтрованы по статусу {state_upper}")
+            if state in list_states:
+                logger.info("выбран один из предложенных статусов транзакций")
+                print(f"Операции отфильтрованы по статусу {state}")
+                logger.info(f"Операции отфильтрованы по статусу {state}")
                 return state
             else:
-                print(f"статус операции {state} недоступен.")
+                logger.error(f"статус операции {state} недоступен")
+                print(f"статус операции {state} недоступен. Попробуйте снова!")
                 print(state)
-        except ValueError:
-            print(f"статус операции {state} недоступен.")
+        except Exception as e:
+            logger.error(f"ошибка при выборе статуса транзакций {e}")
+            print("Что-то пошло не так! Попробуйте снова!")
             print(state)
 
 
 def list_date_transactions(transactions):
-
+    """декодирование списка дат транзакций"""
+    logger.info("декодирование списка дат транзакций")
     list_date = [el.get("date") for el in transactions if el.get("date")]
     my_format_date = decoder_date(list_date)
     return my_format_date
 
 
 def update_dates(filter_by_state, list_date):
+    """преобразование фоормата дат из отфильтрованных транзакций на формат  %d.%m.%Y"""
+    logger.info(
+        "преобразование фоормата дат из отфильтрованных транзакций на формат  %d.%m.%Y"
+    )
     for i, transaction in enumerate(filter_by_state):
         if i < len(list_date):
             transaction["date"] = list_date[i]
@@ -113,30 +130,37 @@ def update_dates(filter_by_state, list_date):
 
 
 def rate_date(list_by_state):
+    """преобразование фоормата дат из отфильтрованных транзакций на формат  %Y-%m-%d"""
+    logger.info(
+        "преобразование фоормата дат из отфильтрованных транзакций на формат  %Y-%m-%d"
+    )
     try:
-        logger.info("Преобразование дат в формат %Y.%m.%d")
+        logger.info("Преобразование дат в формат %Y-%m-%d")
         for el in list_by_state:
             el["date"] = datetime.strptime(el["date"], "%d.%m.%Y").strftime("%Y-%m-%d")
 
     except Exception as e:
-        # print(f'Что-то пошло не так: {e}')
-        logger.error(f"Ошибка: {e}")
+        print(f"Что-то пошло не так: {e}")
+        logger.error(f"Ошибка при преобразовании даты: {e}")
     return list_by_state
 
 
 def sorted_by_date(transactions):
+    """выбор сортировки по дате"""
     while True:
         try:
-            sort_date = input("Отсортировать операции по дате? Да/Нет ")
-            sort_date_title = sort_date.title()
-            if sort_date_title == "Да":
+            sort_date = input("Отсортировать операции по дате? Да/Нет ").strip().title()
 
+            if sort_date == "Да":
+                logger.info("выбрана сортировка по дате")
                 sort_list_states = sort_id_date(transactions)
                 return sort_list_states
-            elif sort_date_title == "Нет":
+            elif sort_date == "Нет":
+                logger.info("не выбрана сортировка по дате")
                 return transactions
 
             else:
+                logger.info("Введен некоректный ответ.")
                 print("Вы ввели некоректный ответ. Попробуйте снова.")
                 print(sort_date)
         except Exception as e:
