@@ -4,7 +4,7 @@ from utils import get_data_transactions as set_json
 from processing import select_state_id, sort_id_date
 from read_transactions_csv import get_data_transactions as set_csv
 from read_transactions_excel import get_data_transactions as set_excel
-
+from widget import decoder_date
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler(
@@ -101,6 +101,6 @@ if __name__ == "__main__":
     my_list_trans = read_file_by_format(my_format_file)
     my_list_states = set_by_state(my_list_trans)
     my_state = choose_state(my_list_states)
-
+    my_format_date = decoder_date()
     my_filter_by_state = select_state_id(my_list_trans, my_state)
     print(*my_filter_by_state, sep="\n")
