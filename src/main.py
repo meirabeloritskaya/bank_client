@@ -4,7 +4,10 @@ from utils import get_data_transactions as set_json
 from processing import select_state_id, sort_id_date
 from read_transactions_csv import get_data_transactions as set_csv
 from read_transactions_excel import get_data_transactions as set_excel
+from currency_cod import currency_cod_transaction
 from widget import decoder_date
+from descriptions import description_transaction
+
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler(
@@ -154,7 +157,7 @@ def sorted_by_date(transactions):
             if sort_date == "Да":
                 logger.info("выбрана сортировка по дате")
                 reverse_date = input(
-                    "Отсортировать операции по возрастанию или убыванию даты? по возрастанию/по убыванию"
+                    "Отсортировать операции по возрастанию или убыванию даты? по возрастанию/по убыванию "
                 )
                 if reverse_date == "по возрастанию":
                     logger.info("выбрана сортировка по возрастанию")
@@ -183,34 +186,62 @@ def sorted_by_date(transactions):
             print(sort_date)
 
 
-# def filter_by_currency_cod(transactions):
-#     """выбор валюты транзакций для фильтрации"""
-#     logger.info("выбор валюты транзакций для фильтрации")
-#     while True:
-#         try:
-#             currency_cod = (
-#                 input("Выводить только рублевые транзакции? Да/Нет: ").strip().title()
-#             )
-#
-#             if currency_cod == "Да":
-#                 logger.info("выбраны рублевые транзакции")
-#
-#             elif currency_cod == "Нет":
-#                 logger.info("выбраны все транзакции")
-#                 return transactions
-#
-#             else:
-#                 logger.info("Введен некоректный ответ.")
-#                 print("Вы ввели некоректный ответ. Попробуйте снова.")
-#                 print(currency_cod)
-#         except Exception as e:
-#             print(f"Что-то пошло не так: {e}")
-#             logger.error(f"Ошибка при сортировке по дате: {e}")
-#             print(currency_cod)
+def filter_by_currency_cod(transactions):
+    """выбор валюты транзакций для фильтрации"""
+    logger.info("выбор валюты транзакций для фильтрации")
+    while True:
+        try:
+            is_cod_rub = (
+                input("Выводить только рублевые транзакции? Да/Нет: ").strip().title()
+            )
+
+            if is_cod_rub == "Да":
+                logger.info("выбраны рублевые транзакции")
+                transactions_rub = currency_cod_transaction(transactions, 'RUB')
+                return transactions_rub
+            elif is_cod_rub == "Нет":
+                logger.info("выбраны все транзакции")
+                return transactions
+
+            else:
+                logger.info("Введен некоректный ответ.")
+                print("Вы ввели некоректный ответ. Попробуйте снова.")
+                print(is_cod_rub)
+        except Exception as e:
+            print(f"Что-то пошло не так: {e}")
+            logger.error(f"Ошибка при фильтрации: {e}")
+            print(is_cod_rub)
 
 
-def filter_by_word(word_description):
-    pass
+def filter_by_word(transactions):
+    """выбор слова в описании для фильтрации"""
+    logger.info("выбор слова в описании для фильтрации")
+    while True:
+        try:
+            is_word_description = (
+                input("Отфильтровать список транзакций по определенному слову? Да/Нет: ").strip().title()
+            )
+
+            if is_word_description == "Да":
+                logger.info("выбрано слово в описании")
+                word_description = input(
+                    "введите слово или фразу, которые должно находиться в описании транзакции: "
+                )
+                list_filter_by_word = description_transaction(transactions, word_description)
+                return list_filter_by_word
+
+            elif is_word_description == "Нет":
+                logger.info("слово в описании не выбрано")
+                return transactions
+
+            else:
+                logger.info("Введен некоректный ответ.")
+                print("Вы ввели некоректный ответ. Попробуйте снова.")
+                print(is_word_description)
+        except Exception as e:
+            print(f"Что-то пошло не так: {e}")
+            logger.error(f"Ошибка при фильтрации: {e}")
+            print(is_word_description)
 
 
 if __name__ == "__main__":
@@ -228,4 +259,8 @@ if __name__ == "__main__":
     my_list_norm_format_date = rate_date(my_list_transactions_by_state)
     # print(*my_list_norm_format_date, sep='\n')
     my_sorted_list_transactions = sorted_by_date(my_list_norm_format_date)
-    print(*my_sorted_list_transactions, sep="\n")
+    # print(*my_sorted_list_transactions, sep="\n")
+    my_list_filter_by_currency_cod = filter_by_currency_cod(my_sorted_list_transactions)
+    print(*my_list_filter_by_currency_cod, sep='\n')
+    my_list_filter_by_word = filter_by_word(my_list_filter_by_currency_cod)
+    print(*my_list_filter_by_word, sep='\n')
