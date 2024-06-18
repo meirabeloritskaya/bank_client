@@ -1,5 +1,5 @@
 import logging
-
+from datetime import datetime
 from utils import get_data_transactions as set_json
 from processing import select_state_id, sort_id_date
 from read_transactions_csv import get_data_transactions as set_csv
@@ -84,10 +84,12 @@ def choose_state(list_states):
             state = input(
                 "Введите статус, по которому необходимо выполнить фильтрацию: "
             )
-            if state in list_states:
-                state_upper = state.upper()
-                print(f"Операции отфильтрованы по статусу {state}")
-                return state_upper
+            state_upper = state.upper()
+
+            if state_upper in list_states:
+
+                print(f"Операции отфильтрованы по статусу {state_upper}")
+                return state
             else:
                 print(f"статус операции {state} недоступен.")
                 print(state)
@@ -96,11 +98,70 @@ def choose_state(list_states):
             print(state)
 
 
+def list_date_transactions(transactions):
+
+    list_date = [el.get("date") for el in transactions if el.get("date")]
+    my_format_date = decoder_date(list_date)
+    return my_format_date
+
+
+def update_dates(filter_by_state, list_date):
+    for i, transaction in enumerate(filter_by_state):
+        if i < len(list_date):
+            transaction["date"] = list_date[i]
+    return filter_by_state
+
+
+def rate_date(list_by_state):
+    try:
+        logger.info("Преобразование дат в формат %Y.%m.%d")
+        for el in list_by_state:
+            el["date"] = datetime.strptime(el["date"], "%d.%m.%Y").strftime("%Y-%m-%d")
+
+    except Exception as e:
+        # print(f'Что-то пошло не так: {e}')
+        logger.error(f"Ошибка: {e}")
+    return list_by_state
+
+
+def sorted_by_date(transactions):
+    while True:
+        try:
+            sort_date = input("Отсортировать операции по дате? Да/Нет ")
+            sort_date_title = sort_date.title()
+            if sort_date_title == "Да":
+
+                sort_list_states = sort_id_date(transactions)
+                return sort_list_states
+            elif sort_date_title == "Нет":
+                return transactions
+
+            else:
+                print("Вы ввели некоректный ответ. Попробуйте снова.")
+                print(sort_date)
+        except Exception as e:
+            print(f"Что-то пошло не так: {e}")
+            logger.error(f"Ошибка при сортировке по дате: {e}")
+            print(sort_date)
+
+
+def finish_list_transaction(sort_reverse, currency_cod, filter_by_word):
+    pass
+
+
 if __name__ == "__main__":
     my_format_file = format_file()
     my_list_trans = read_file_by_format(my_format_file)
     my_list_states = set_by_state(my_list_trans)
     my_state = choose_state(my_list_states)
-    my_format_date = decoder_date()
+
     my_filter_by_state = select_state_id(my_list_trans, my_state)
-    print(*my_filter_by_state, sep="\n")
+    # print(*my_filter_by_state, sep="\n")
+    my_list_date = list_date_transactions(my_filter_by_state)
+    # print(my_list_date)
+    my_list_transactions_by_state = update_dates(my_filter_by_state, my_list_date)
+    # print(*my_list_transactions_by_state, sep='\n')
+    my_list_norm_format_date = rate_date(my_list_transactions_by_state)
+    # print(*my_list_norm_format_date, sep='\n')
+    my_sorted_list_transactions = sorted_by_date(my_list_norm_format_date)
+    print(*my_sorted_list_transactions, sep="\n")
