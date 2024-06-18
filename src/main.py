@@ -46,7 +46,7 @@ def format_file():
                 print(response_program)
                 return format_file
             else:
-                logger.error("выбран неверный формат файла")
+                logger.info("выбран неверный формат файла")
                 print("Вы ввели неверный формат файла. Попробуйте снова!")
                 print(choose_file)
         except Exception as e:
@@ -101,7 +101,7 @@ def choose_state(list_states):
                 logger.info(f"Операции отфильтрованы по статусу {state}")
                 return state
             else:
-                logger.error(f"статус операции {state} недоступен")
+                logger.info(f"статус операции {state} недоступен")
                 print(f"статус операции {state} недоступен. Попробуйте снова!")
                 print(state)
         except Exception as e:
@@ -153,8 +153,22 @@ def sorted_by_date(transactions):
 
             if sort_date == "Да":
                 logger.info("выбрана сортировка по дате")
-                sort_list_states = sort_id_date(transactions)
-                return sort_list_states
+                reverse_date = input(
+                    "Отсортировать операции по возрастанию или убыванию даты? по возрастанию/по убыванию"
+                )
+                if reverse_date == "по возрастанию":
+                    logger.info("выбрана сортировка по возрастанию")
+                    sort_list_states = sort_id_date(transactions, reverse=False)
+                    return sort_list_states
+                elif reverse_date == "по убыванию":
+                    logger.info("выбрана сортировка по убыванию")
+                    sort_list_states = sort_id_date(transactions)
+                    return sort_list_states
+                else:
+                    logger.info("Вы ввели некоректный ответ. Попробуйте снова.")
+                    print("Вы ввели некоректный ответ. Попробуйте снова.")
+                    print(reverse_date)
+
             elif sort_date == "Нет":
                 logger.info("не выбрана сортировка по дате")
                 return transactions
