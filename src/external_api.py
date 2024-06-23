@@ -1,6 +1,6 @@
 import requests
 import os
-
+from utils import get_data_transactions
 
 from dotenv import load_dotenv
 
@@ -27,3 +27,11 @@ def amount_transaction(transaction_by_id):
             return my_result["result"]
         except Exception as e:
             print(e)
+
+
+if __name__ == "__main__":
+    path = "C:/Users/Meira/PycharmProjects/card_client/data/operations.json"
+    transactions = get_data_transactions(path)
+    n = int(input("введите колличество транзакций: "))
+    for i in range(n):
+        print(amount_transaction(transactions[i]))

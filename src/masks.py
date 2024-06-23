@@ -41,5 +41,5 @@ def account_client(number_user_account: int) -> str:
 
 
 if __name__ == "__main__":
-    card_client(1596837868705199)
-    account_client(64686473678894779589)
+    print(card_client(1596837868705199))
+    print(account_client(64686473678894779589))
