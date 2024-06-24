@@ -51,4 +51,4 @@ pip install -r requirements.txt
 
 ## Лицензия:
 
-Этот проект лицензирован по [лицензии MIT](LICENSE).
+Этот проект лицензирован по [лицензии MIT](LICENSE)!
